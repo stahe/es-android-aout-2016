@@ -1,0 +1,1832 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Introducción a la programación de tabletas Android con Android Studio">
+      
+      
+        <meta name="author" content="Serge Tahé">
+      
+      
+        <link rel="canonical" href="https://stahe.github.io/es-android-aout-2016/anexos.html">
+      
+      
+        <link rel="prev" href="tarea-2-control-de-placas-arduino-con-una-tableta-android.html">
+      
+      
+      
+        
+      
+      
+      <link rel="icon" href="assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.0">
+    
+    
+      
+        <title>6. Anexos - Introducción a la programación de tabletas Android con Android Studio</title>
+      
+    
+    
+      <link rel="stylesheet" href="assets/stylesheets/main.618322db.min.css">
+      
+        
+        <link rel="stylesheet" href="assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="stylesheets/focus.css">
+    
+    <script>__md_scope=new URL(".",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-EBZC3JVJNR"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    var siteName = "Introducción a la programación de tabletas Android con Android Studio";
+    gtag('config', 'G-EBZC3JVJNR', {
+        'page_title': siteName
+    });
+  </script>
+
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="blue" data-md-color-accent="purple">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#6-anexos" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="index.html" title="Introducción a la programación de tabletas Android con Android Studio" class="md-header__button md-logo" aria-label="Introducción a la programación de tabletas Android con Android Studio" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Introducción a la programación de tabletas Android con Android Studio
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              6. Anexos
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="blue" data-md-color-accent="purple"  aria-label="Cambiar a modo oscuro"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Cambiar a modo oscuro" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="blue" data-md-color-accent="purple"  aria-label="Cambiar a modo claro"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Cambiar a modo claro" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12s-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+      <div class="md-header__source">
+        <a href="https://stahe.github.io/es-android-aout-2016" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+  
+
+<nav class="md-nav md-nav--primary md-nav--integrated" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="index.html" title="Introducción a la programación de tabletas Android con Android Studio" class="md-nav__button md-logo" aria-label="Introducción a la programación de tabletas Android con Android Studio" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    Introducción a la programación de tabletas Android con Android Studio
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://stahe.github.io/es-android-aout-2016" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="index.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Bienvenidos
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="aprender-programacion-para-android.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    1. Aprender programación para Android
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="esqueleto-de-un-cliente-android-que-se-comunica-con-un-servicio-web--json.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    2. Esqueleto de un cliente Android que se comunica con un servicio web / JSON
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="caso-practico-gestion-de-citas.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    3. Caso práctico: gestión de citas
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="tarea-1-gestion-basica-de-nominas.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    4. Tarea 1: Gestión básica de nóminas
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="tarea-2-control-de-placas-arduino-con-una-tableta-android.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    5. Tarea 2: Control de placas Arduino con una tableta Android
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    6. Anexos
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="anexos.html" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    6. Anexos
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#61-instalacion-del-ide-de-arduino" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6.1. Instalación del IDE de Arduino
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#62-instalacion-del-controlador-de-arduino" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6.2. Instalación del controlador de Arduino
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#63-probar-el-ide" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6.3. Probar el IDE
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#64-conexion-de-red-de-arduino" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6.4. Conexión de red de Arduino
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#65-prueba-de-una-aplicacion-de-red" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6.5. Prueba de una aplicación de red
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#66-la-biblioteca-ajson" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6.6. La biblioteca aJson
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#67-la-tableta-android" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6.7. La tableta Android
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#68-instalacion-de-un-jdk" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6.8. Instalación de un JDK
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#69-instalacion-del-gestor-del-emulador-genymotion" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6.9. Instalación del gestor del emulador Genymotion
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#610-instalacion-de-maven" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6.10. Instalación de Maven
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#611-instalacion-del-ide-de-android-studio" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6.11. Instalación del IDE de Android Studio
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#612-uso-de-los-ejemplos" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6.12. Uso de los ejemplos
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#613-instalacion-del-complemento-de-chrome-advanced-rest-client" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6.13. Instalación del complemento de Chrome [Advanced Rest Client]
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#614-gestion-de-objetos-json-en-java" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6.14. Gestión de objetos JSON en Java
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#615-instalacion-de-wampserver" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6.15. Instalación de [ WampServer]
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<p><a id="refheading191902103626402"></a></p>
+<h1 id="6-anexos">6. <span style="color: #365f91">Anexos</span></h1>
+<p><a id="refheading472751712028290"></a><span style="color: #000000">Aquí explicamos cómo instalar las herramientas utilizadas en este documento en equipos con Windows 7 a 10. El lector debe adaptar estas instrucciones a su propio entorno.</span></p>
+<p><a id="refheading397078041079301"></a>
+<a id="annexes"></a></p>
+<h2 id="61-instalacion-del-ide-de-arduino">6.1. <span style="color: #4f81bd">Instalación del IDE de Arduino</span></h2>
+<p>La página web oficial de Arduino es [http://www.arduino.cc/]. Aquí es donde encontrarás el IDE de desarrollo para Arduinos [http://arduino.cc/en/Main/Software]:</p>
+<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/10000000000000D9000000C288A7FBBA.png" width="152" height="136" style="display:inline-block; margin:4px;width:4.02cm;height:3.595cm;" class="odt-zoomable" data-zoom-src="images/10000000000000D9000000C288A7FBBA.png" /></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/10000000000000B200000172FAB58CD1.png" width="125" height="259" style="display:inline-block; margin:4px;width:3.3cm;height:6.86cm;" class="odt-zoomable" data-zoom-src="images/10000000000000B200000172FAB58CD1.png" /></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;">&nbsp;</td></tr></table>
+
+<p>El archivo descargado [1] es un archivo ZIP que, una vez extraído, crea la estructura de directorios [2]. Puedes iniciar el IDE haciendo doble clic en el archivo ejecutable [3].</p>
+<p><a id="refheading33719961377870"></a></p>
+<h2 id="62-instalacion-del-controlador-de-arduino">6.2. <span style="color: #4f81bd">Instalación del controlador de Arduino</span></h2>
+<p>Para que el IDE se comunique con un Arduino, el Arduino debe ser reconocido por el ordenador host. Para ello, sigue estos pasos:</p>
+<ul>
+  <li>Conecta el Arduino a un puerto USB del ordenador;
+  </li>
+  <li>A continuación, el sistema intentará encontrar el controlador para el nuevo dispositivo USB. No lo encontrará. A continuación, debe especificar que el controlador se encuentra en el disco en <b>&lt;arduino&gt;/drivers</b>, donde &lt;arduino&gt; es la carpeta de instalación del IDE de Arduino. 
+  </li>
+</ul>
+<p><a id="refheading33721961377870"></a></p>
+<h2 id="63-probar-el-ide">6.3. <span style="color: #4f81bd">Probar el IDE</span></h2>
+<p>Para probar el IDE, siga estos pasos:</p>
+<ul>
+  <li>Inicie el IDE;
+  </li>
+  <li>conecta el Arduino al PC mediante su cable USB. Por ahora, no incluyas la tarjeta de red;
+  </li>
+</ul>
+
+<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/100000000000025F000000C2762AEE05.png" width="395" height="126" style="display:inline-block; margin:4px;width:10.44cm;height:3.337cm;" class="odt-zoomable" data-zoom-src="images/100000000000025F000000C2762AEE05.png" /></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/100000000000018D000000663E265D33.png" width="258" height="66" style="display:inline-block; margin:4px;width:6.83cm;height:1.755cm;" class="odt-zoomable" data-zoom-src="images/100000000000018D000000663E265D33.png" /></td></tr></table>
+
+<ul>
+  <li>en [1], selecciona el tipo de placa Arduino conectada al puerto USB;
+  </li>
+  <li>en [2], especifica el puerto USB al que está conectado el Arduino. Para averiguarlo, desconecta el Arduino y toma nota de los puertos. Vuelve a conectarlo y comprueba los puertos de nuevo: el que se ha añadido es el puerto del Arduino;
+  </li>
+</ul>
+
+<p>Ejecuta algunos de los ejemplos incluidos en el IDE:</p>
+<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/1000000000000263000000C949BE4591.png" width="397" height="131" style="display:inline-block; margin:4px;width:10.509cm;height:3.457cm;" class="odt-zoomable" data-zoom-src="images/1000000000000263000000C949BE4591.png" /></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;">&nbsp;</td></tr></table>
+
+<p>El ejemplo se carga y se muestra:</p>
+<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/1000000000000217000001FA96EABE38.png" width="375" height="354" style="display:inline-block; margin:4px;width:9.91cm;height:9.373cm;" class="odt-zoomable" data-zoom-src="images/1000000000000217000001FA96EABE38.png" /></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;">&nbsp;</td></tr></table>
+
+<p>Los ejemplos incluidos en el IDE son muy didácticos y están bien comentados. El código de Arduino está escrito en C y consta de dos partes diferenciadas:</p>
+<ul>
+  <li>una función [<b>setup</b>] que se ejecuta una vez al iniciar la aplicación, ya sea cuando se «carga» desde el PC host al Arduino, o cuando la aplicación ya está presente en el Arduino y se pulsa el botón [Reset]. Aquí es donde se coloca el código de inicialización de la aplicación;
+  </li>
+  <li>una función [<b>loop</b>] que se ejecuta de forma continua (bucle infinito). Aquí es donde va el núcleo de la aplicación.
+  </li>
+</ul>
+
+<p>Aquí,</p>
+<ul>
+  <li>la función [setup] configura el pin 13 como salida;
+  </li>
+  <li>la función [loop] lo enciende y apaga repetidamente: el LED se enciende y se apaga cada segundo.
+  </li>
+</ul>
+
+<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/10000000000000DB0000008DABE29F35.png" width="153" height="99" style="display:inline-block; margin:4px;width:4.06cm;height:2.614cm;" class="odt-zoomable" data-zoom-src="images/10000000000000DB0000008DABE29F35.png" /></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;">&nbsp;</td></tr></table>
+
+<p>El programa que se muestra se carga en el Arduino pulsando el botón [1]. Una vez cargado, se ejecuta y el LED 13 comienza a parpadear de forma indefinida.</p>
+<p><a id="refheading33723961377870"></a></p>
+<h2 id="64-conexion-de-red-de-arduino">6.4. <span style="color: #4f81bd">Conexión de red de Arduino</span></h2>
+<p>Los Arduino y el PC host deben estar en la misma red privada:</p>
+<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/10000000000003A5000001079D693529.png" width="467" height="132" style="display:inline-block; margin:4px;width:12.344cm;height:3.48cm;" class="odt-zoomable" data-zoom-src="images/10000000000003A5000001079D693529.png" /></td></tr></table>
+
+<p>Si solo hay un Arduino, se puede conectar al PC host mediante un simple cable RJ-45. Si hay más de uno, el PC host y los Arduinos se conectarán a la misma red a través de un mini-hub.</p>
+<p>El PC host y los Arduinos se colocarán en la red privada <strong>192.168.2.x</strong>.</p>
+<ul>
+  <li>Las direcciones IP de los Arduinos se configuran mediante el código fuente. Veremos cómo;
+  </li>
+  <li>La dirección IP del ordenador host se puede configurar de la siguiente manera:
+  </li>
+</ul>
+
+<ul>
+  <li>Ve a [Panel de control\Red e Internet\Centro de redes y recursos compartidos]:
+  </li>
+</ul>
+
+<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/10000000000002CB0000018F68EC5235.png" width="500" height="279" style="display:inline-block; margin:4px;width:13.24cm;height:7.387cm;" class="odt-zoomable" data-zoom-src="images/10000000000002CB0000018F68EC5235.png" /></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;">&nbsp;</td></tr></table>
+
+<ul>
+  <li>En [1], haz clic en el enlace [Conexión de área local]
+  </li>
+</ul>
+
+<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/1000000000000179000001C79DD9B237.png" width="264" height="318" style="display:inline-block; margin:4px;width:6.98cm;height:8.424cm;" class="odt-zoomable" data-zoom-src="images/1000000000000179000001C79DD9B237.png" /></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/10000000000001BD00000173CD5E97D9.png" width="311" height="260" style="display:inline-block; margin:4px;width:8.241cm;height:6.87cm;" class="odt-zoomable" data-zoom-src="images/10000000000001BD00000173CD5E97D9.png" /></td></tr></table>
+
+<ul>
+  <li>En [2], vea las propiedades de la conexión;
+  </li>
+  <li>En [4], consulte las propiedades IPv4 [3] de la conexión;
+  </li>
+</ul>
+
+<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/1000000000000197000001C87B84023F.png" width="285" height="319" style="display:inline-block; margin:4px;width:7.541cm;height:8.449cm;" class="odt-zoomable" data-zoom-src="images/1000000000000197000001C87B84023F.png" /></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;">&nbsp;</td></tr></table>
+
+<ul>
+  <li>En [5], asigne la dirección IP [192.168.2.1] al ordenador host;
+  </li>
+  <li>en [6], asigne la máscara de subred [255.255.255.0] a la red;
+  </li>
+  <li>confirme todo en [7].
+  </li>
+</ul>
+<p><a id="refheading33725961377870"></a></p>
+<h2 id="65-prueba-de-una-aplicacion-de-red">6.5. <span style="color: #4f81bd">Prueba de una aplicación de red</span></h2>
+<p>Utilizando el IDE, cargue el ejemplo [Ejemplos / Ethernet / WebServer]:</p>
+<div class="odt-code-rich" data-linenums="true" style="counter-reset: odtline 0;"><pre><code class="language-python">
+<span class="odt-code-line"><span class="odt-code-line-content">/*</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">  Web Server</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"> </span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"> A simple web server that shows the value of the analog input pins.</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"> using an Arduino Wiznet Ethernet shield. </span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"> </span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"> Circuit:</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"> * Ethernet shield attached to pins 10, 11, 12, 13</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"> * Analog inputs attached to pins A0 through A5 (optional)</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"> </span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"> created 18 Dec 2009</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"> by David A. Mellis</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"> modified 9 Apr 2012</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"> by Tom Igoe</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"> </span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"> */</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"> </span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">#include &lt;SPI.h&gt;</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">#include &lt;Ethernet.h&gt;</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"> </span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">// Enter a MAC address and IP address for your controller below.</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">// The IP address will be dependent on your local network:</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">byte</span><span style="color:#008080"> </span><span style="color:#000000">mac[]</span><span style="color:#008080"> </span><span style="color:#000000">=</span><span style="color:#008080"> </span><span style="color:#000000">{</span><span style="color:#008080"> </span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#008080">  </span><span style="color:#000080">0xDE</span><span style="color:#000000">,</span><span style="color:#008080"> </span><span style="color:#000080">0xAD</span><span style="color:#000000">,</span><span style="color:#008080"> </span><span style="color:#000080">0xBE</span><span style="color:#000000">,</span><span style="color:#008080"> </span><span style="color:#000080">0xEF</span><span style="color:#000000">,</span><span style="color:#008080"> </span><span style="color:#000080">0xFE</span><span style="color:#000000">,</span><span style="color:#008080"> </span><span style="color:#000080">0xED</span><span style="color:#008080"> </span><span style="color:#000000">};</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">IPAddress</span><span style="color:#008080"> </span><span style="color:#000000">ip(</span><span style="color:#000080">192</span><span style="color:#000000">,</span><span style="color:#000080">168</span><span style="color:#000000">,</span><span style="color:#000080">1</span><span style="color:#000000">,</span><span style="color:#008080"> </span><span style="color:#000080">177</span><span style="color:#000000">);</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"> </span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">// Initialize the Ethernet server library</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">// with the IP address and port you want to use </span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">// (port 80 is default for HTTP):</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">EthernetServer</span><span style="color:#008080"> </span><span style="color:#000000">server(</span><span style="color:#000080">80</span><span style="color:#000000">);</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"> </span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"><span style="font-weight:bold;color:#000000">void</span><span style="color:#008080"> </span><span style="color:#000000">setup()</span><span style="color:#008080"> </span><span style="color:#000000">{</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"> <span style="color:#008080">// Open serial communications and wait for port to open:</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#008080">  </span><span style="color:#000000">Serial.begin(</span><span style="color:#000080">9600</span><span style="color:#000000">);</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#008080">   </span><span style="font-weight:bold;color:#000000">while</span><span style="color:#008080"> </span><span style="color:#000000">(!Serial)</span><span style="color:#008080"> </span><span style="color:#000000">{</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#008080">    </span><span style="color:#000000">;</span><span style="color:#008080"> </span><span style="font-style:italic;color:#008000">// wait for serial port to connect. Needed for Leonardo only</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#008080">  </span><span style="color:#000000">}</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"> </span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"> </span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">  <span style="color:#008080">// start the Ethernet connection and the server:</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#008080">  </span><span style="color:#000000">Ethernet.begin(mac,</span><span style="color:#008080"> </span><span style="color:#000000">ip);</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#008080">  </span><span style="color:#000000">server.begin();</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#008080">  </span><span style="color:#000000">Serial.print(</span><span style="color:#800000">&quot;server is at &quot;</span><span style="color:#000000">);</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#008080">  </span><span style="color:#000000">Serial.println(Ethernet.localIP());</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">}</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"> </span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"> </span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"><span style="font-weight:bold;color:#000000">void</span><span style="color:#008080"> </span><span style="color:#000000">loop()</span><span style="color:#008080"> </span><span style="color:#000000">{</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">  <span style="color:#008080">// listen for incoming clients</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#008080">  </span><span style="color:#000000">EthernetClient</span><span style="color:#008080"> </span><span style="color:#000000">client</span><span style="color:#008080"> </span><span style="color:#000000">=</span><span style="color:#008080"> </span><span style="color:#000000">server.available();</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#008080">  </span><span style="font-weight:bold;color:#000000">if</span><span style="color:#008080"> </span><span style="color:#000000">(client)</span><span style="color:#008080"> </span><span style="color:#000000">{</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#008080">    </span><span style="color:#000000">Serial.println(</span><span style="color:#800000">&quot;new client&quot;</span><span style="color:#000000">);</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">    <span style="color:#008080">// an http request ends with a blank line</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#008080">    </span><span style="color:#000000">boolean</span><span style="color:#008080"> </span><span style="color:#000000">currentLineIsBlank</span><span style="color:#008080"> </span><span style="color:#000000">=</span><span style="color:#008080"> </span><span style="font-weight:bold;color:#000000">true</span><span style="color:#000000">;</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#008080">    </span><span style="font-weight:bold;color:#000000">while</span><span style="color:#008080"> </span><span style="color:#000000">(client.connected())</span><span style="color:#008080"> </span><span style="color:#000000">{</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#008080">      </span><span style="font-weight:bold;color:#000000">if</span><span style="color:#008080"> </span><span style="color:#000000">(client.available())</span><span style="color:#008080"> </span><span style="color:#000000">{</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#008080">        </span><span style="font-weight:bold;color:#000000">char</span><span style="color:#008080"> </span><span style="color:#000000">c</span><span style="color:#008080"> </span><span style="color:#000000">=</span><span style="color:#008080"> </span><span style="color:#000000">client.read();</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#008080">        </span><span style="color:#000000">Serial.write(c);</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">        <span style="color:#008080">// if you&#x27;ve gotten to the end of the line (received a newline</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">        <span style="color:#008080">// character) and the line is blank, the http request has ended,</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">        <span style="color:#008080">// so you can send a reply</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#008080">        </span><span style="font-weight:bold;color:#000000">if</span><span style="color:#008080"> </span><span style="color:#000000">(c</span><span style="color:#008080"> </span><span style="color:#000000">==</span><span style="color:#008080"> </span><span style="color:#000000">&#x27;\n&#x27;</span><span style="color:#008080"> </span><span style="color:#000000">&amp;&amp;</span><span style="color:#008080"> </span><span style="color:#000000">currentLineIsBlank)</span><span style="color:#008080"> </span><span style="color:#000000">{</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">          <span style="color:#008080">// send a standard http response header</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#008080">          </span><span style="color:#000000">client.println(</span><span style="color:#800000">&quot;HTTP/1.1 200 OK&quot;</span><span style="color:#000000">);</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#008080">          </span><span style="color:#000000">client.println(</span><span style="color:#800000">&quot;Content-Type: text/html&quot;</span><span style="color:#000000">);</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#008080">          </span><span style="color:#000000">client.println(</span><span style="color:#800000">&quot;Connection: close&quot;</span><span style="color:#000000">);</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#008080">          </span><span style="color:#000000">client.println();</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#008080">          </span><span style="color:#000000">client.println(</span><span style="color:#800000">&quot;&lt;!DOCTYPE HTML&gt;&quot;</span><span style="color:#000000">);</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#008080">          </span><span style="color:#000000">client.println(</span><span style="color:#800000">&quot;&lt;html&gt;&quot;</span><span style="color:#000000">);</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">                    <span style="color:#008080">// add a meta refresh tag, so the browser pulls again every 5 seconds:</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#008080">          </span><span style="color:#000000">client.println(</span><span style="color:#800000">&quot;&lt;meta http-equiv=\&quot;refresh\&quot; content=\&quot;5\&quot;&gt;&quot;</span><span style="color:#000000">);</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">          <span style="color:#008080">// output the value of each analog input pin</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#008080">          </span><span style="font-weight:bold;color:#000000">for</span><span style="color:#008080"> </span><span style="color:#000000">(</span><span style="font-weight:bold;color:#000000">int</span><span style="color:#008080"> </span><span style="color:#000000">analogChannel</span><span style="color:#008080"> </span><span style="color:#000000">=</span><span style="color:#008080"> </span><span style="color:#000080">0</span><span style="color:#000000">;</span><span style="color:#008080"> </span><span style="color:#000000">analogChannel</span><span style="color:#008080"> </span><span style="color:#000000">&lt;</span><span style="color:#008080"> </span><span style="color:#000080">6</span><span style="color:#000000">;</span><span style="color:#008080"> </span><span style="color:#000000">analogChannel++)</span><span style="color:#008080"> </span><span style="color:#000000">{</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#008080">            </span><span style="font-weight:bold;color:#000000">int</span><span style="color:#008080"> </span><span style="color:#000000">sensorReading</span><span style="color:#008080"> </span><span style="color:#000000">=</span><span style="color:#008080"> </span><span style="color:#000000">analogRead(analogChannel);</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#008080">            </span><span style="color:#000000">client.print(</span><span style="color:#800000">&quot;analog input &quot;</span><span style="color:#000000">);</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#008080">            </span><span style="color:#000000">client.print(analogChannel);</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#008080">            </span><span style="color:#000000">client.print(</span><span style="color:#800000">&quot; is &quot;</span><span style="color:#000000">);</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#008080">            </span><span style="color:#000000">client.print(sensorReading);</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#008080">            </span><span style="color:#000000">client.println(</span><span style="color:#800000">&quot;&lt;br /&gt;&quot;</span><span style="color:#000000">);</span><span style="color:#008080">       </span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#008080">          </span><span style="color:#000000">}</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#008080">          </span><span style="color:#000000">client.println(</span><span style="color:#800000">&quot;&lt;/html&gt;&quot;</span><span style="color:#000000">);</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#008080">          </span><span style="font-weight:bold;color:#000000">break</span><span style="color:#000000">;</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#008080">        </span><span style="color:#000000">}</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#008080">        </span><span style="font-weight:bold;color:#000000">if</span><span style="color:#008080"> </span><span style="color:#000000">(c</span><span style="color:#008080"> </span><span style="color:#000000">==</span><span style="color:#008080"> </span><span style="color:#000000">&#x27;\n&#x27;)</span><span style="color:#008080"> </span><span style="color:#000000">{</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">          <span style="color:#008080">// you&#x27;re starting a new line</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#008080">          </span><span style="color:#000000">currentLineIsBlank</span><span style="color:#008080"> </span><span style="color:#000000">=</span><span style="color:#008080"> </span><span style="font-weight:bold;color:#000000">true</span><span style="color:#000000">;</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#008080">        </span><span style="color:#000000">}</span><span style="color:#008080"> </span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#008080">        </span><span style="font-weight:bold;color:#000000">else</span><span style="color:#008080"> </span><span style="font-weight:bold;color:#000000">if</span><span style="color:#008080"> </span><span style="color:#000000">(c</span><span style="color:#008080"> </span><span style="color:#000000">!=</span><span style="color:#008080"> </span><span style="color:#000000">&#x27;\r&#x27;)</span><span style="color:#008080"> </span><span style="color:#000000">{</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">          <span style="color:#008080">// you&#x27;ve gotten a character on the current line</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#008080">          </span><span style="color:#000000">currentLineIsBlank</span><span style="color:#008080"> </span><span style="color:#000000">=</span><span style="color:#008080"> </span><span style="font-weight:bold;color:#000000">false</span><span style="color:#000000">;</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#008080">        </span><span style="color:#000000">}</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#008080">      </span><span style="color:#000000">}</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#008080">    </span><span style="color:#000000">}</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">    <span style="color:#008080">// give the web browser time to receive the data</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#008080">    </span><span style="color:#000000">delay(</span><span style="color:#000080">1</span><span style="color:#000000">);</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">    <span style="color:#008080">// close the connection:</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#008080">    </span><span style="color:#000000">client.stop();</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#008080">    </span><span style="color:#000000">Serial.println(</span><span style="color:#800000">&quot;client disconnected&quot;</span><span style="color:#000000">);</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#008080">  </span><span style="color:#000000">}</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">}</span></span>
+</code></pre></div>
+
+<p>Esta aplicación crea un servidor web en el puerto 80 (línea 30) en la dirección IP especificada en la línea 25. La dirección MAC de la línea 23 es la dirección MAC especificada en la placa de red del Arduino.</p>
+<p>La función [setup] inicializa el servidor web:</p>
+<ul>
+  <li>línea 34: inicializa el puerto serie en el que la aplicación registrará los datos. Supervisaremos estos registros;
+  </li>
+  <li>línea 41: se inicializa el nodo TCP/IP (IP, puerto);
+  </li>
+  <li>línea 42: se inicia el servidor de la línea 30 en este nodo de red;
+  </li>
+  <li>líneas 43–44: registra la dirección IP del servidor web;
+  </li>
+</ul>
+
+<p>La función [loop] implementa el servidor web:</p>
+<ul>
+  <li>línea 50: si un cliente se conecta al servidor web, <i>[server].available </i>devuelve ese cliente; de lo contrario, devuelve <i>null</i>;
+  </li>
+  <li>línea 51: si el cliente no es <i>null</i>;
+  </li>
+  <li>línea 55: mientras el cliente esté conectado;
+  </li>
+  <li>línea 56: <i>[client].available </i>es verdadero si el cliente ha enviado caracteres. Estos se almacenan en un búfer. <i>[client].available </i>devuelve verdadero mientras este búfer no esté vacío;
+  </li>
+  <li>línea 57: se lee un carácter enviado por el cliente;
+  </li>
+  <li>línea 58: este carácter se muestra en la consola de registro;
+  </li>
+  <li>línea 62: En el protocolo HTTP, el cliente y el servidor intercambian líneas de texto. 
+    <ul>
+      <li>El cliente envía una solicitud HTTP al servidor web enviando una serie de líneas de texto que terminan con una línea vacía;
+      </li>
+      <li>a continuación, el servidor responde al cliente enviando una respuesta y cerrando la conexión;
+      </li>
+    </ul>
+  </li>
+</ul>
+
+<p>Línea 62: El servidor no hace nada con los encabezados HTTP que recibe del cliente. Simplemente espera la línea vacía: una línea que contiene únicamente el carácter <strong>\n</strong>;</p>
+<ul>
+  <li>Líneas 64–67: El servidor envía al cliente las líneas de texto estándar del protocolo HTTP. Estas terminan con una línea en blanco (línea 67);
+  </li>
+  <li>A partir de la línea 68, el servidor envía un documento a su cliente. Este documento es generado dinámicamente por el servidor y está en formato HTML (líneas 68-69);
+  </li>
+  <li>Línea 71: una línea HTML especial que indica al navegador del cliente que actualice la página cada 5 segundos. De este modo, el navegador solicitará la misma página cada 5 segundos;
+  </li>
+  <li>Líneas 73-80: el servidor envía los valores de las 6 entradas analógicas de Arduino al navegador del cliente;
+  </li>
+  <li>línea 81: se cierra el documento HTML;
+  </li>
+  <li>línea 82: salimos del bucle <i>«while» </i>de la línea 55;
+  </li>
+  <li>línea 97: se cierra la conexión con el cliente;
+  </li>
+  <li>línea 98: el evento se registra en la consola de registro;
+  </li>
+  <li>línea 100: volvemos al principio de la función <b>de bucle</b>: el servidor reanudará la escucha de clientes. Mencionamos que el navegador del cliente solicitaría la misma página cada 5 segundos. El servidor estará ahí para responder de nuevo.
+  </li>
+</ul>
+
+<p>Modifica el código de la línea 25 para incluir la dirección IP de tu Arduino, por ejemplo:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>IPAddress ip(192,168,2,2);
+</code></pre></div>
+<p>Sube el programa al Arduino. Abre la consola de registro (Ctrl-M) (M mayúscula):</p>
+<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/10000000000000CA00000075F4A99959.png" width="141" height="82" style="display:inline-block; margin:4px;width:3.739cm;height:2.166cm;" class="odt-zoomable" data-zoom-src="images/10000000000000CA00000075F4A99959.png" /></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/10000000000000F5000000EA1755651A.png" width="172" height="164" style="display:inline-block; margin:4px;width:4.54cm;height:4.336cm;" class="odt-zoomable" data-zoom-src="images/10000000000000F5000000EA1755651A.png" /></td></tr></table>
+
+<ul>
+  <li>en [1], la consola de registro. El servidor se ha iniciado;
+  </li>
+  <li>en [2], mediante un navegador, solicitamos la dirección IP del Arduino. Aquí, [192.168.2.2] se traduce por defecto a [http://198.162.2.2:80];
+  </li>
+  <li>en [3], la información enviada por el servidor web. Si se consulta el código fuente de la página del navegador, se obtiene:
+  </li>
+</ul>
+
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-1-1"> 1</a></span>
+<span class="normal"><a href="#__codelineno-1-2"> 2</a></span>
+<span class="normal"><a href="#__codelineno-1-3"> 3</a></span>
+<span class="normal"><a href="#__codelineno-1-4"> 4</a></span>
+<span class="normal"><a href="#__codelineno-1-5"> 5</a></span>
+<span class="normal"><a href="#__codelineno-1-6"> 6</a></span>
+<span class="normal"><a href="#__codelineno-1-7"> 7</a></span>
+<span class="normal"><a href="#__codelineno-1-8"> 8</a></span>
+<span class="normal"><a href="#__codelineno-1-9"> 9</a></span>
+<span class="normal"><a href="#__codelineno-1-10">10</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1"></a><span class="cp">&lt;!DOCTYPE HTML&gt;</span>
+<a id="__codelineno-1-2" name="__codelineno-1-2"></a><span class="p">&lt;</span><span class="nt">html</span><span class="p">&gt;</span>
+<a id="__codelineno-1-3" name="__codelineno-1-3"></a><span class="p">&lt;</span><span class="nt">meta</span> <span class="na">http-equiv</span><span class="o">=</span><span class="s">&quot;refresh&quot;</span> <span class="na">content</span><span class="o">=</span><span class="s">&quot;5&quot;</span><span class="p">&gt;</span>
+<a id="__codelineno-1-4" name="__codelineno-1-4"></a>analog input 0 is 1023<span class="p">&lt;</span><span class="nt">br</span> <span class="p">/&gt;</span>
+<a id="__codelineno-1-5" name="__codelineno-1-5"></a>analog input 1 is 1023<span class="p">&lt;</span><span class="nt">br</span> <span class="p">/&gt;</span>
+<a id="__codelineno-1-6" name="__codelineno-1-6"></a>analog input 2 is 727<span class="p">&lt;</span><span class="nt">br</span> <span class="p">/&gt;</span>
+<a id="__codelineno-1-7" name="__codelineno-1-7"></a>analog input 3 is 543<span class="p">&lt;</span><span class="nt">br</span> <span class="p">/&gt;</span>
+<a id="__codelineno-1-8" name="__codelineno-1-8"></a>analog input 4 is 395<span class="p">&lt;</span><span class="nt">br</span> <span class="p">/&gt;</span>
+<a id="__codelineno-1-9" name="__codelineno-1-9"></a>analog input 5 is 310<span class="p">&lt;</span><span class="nt">br</span> <span class="p">/&gt;</span>
+<a id="__codelineno-1-10" name="__codelineno-1-10"></a><span class="p">&lt;/</span><span class="nt">html</span><span class="p">&gt;</span>
+</code></pre></div></td></tr></table></div>
+<p>Aquí podemos ver las líneas de texto enviadas por el servidor. En el lado de Arduino, la consola de registro muestra lo que le envía el cliente:</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-2-1"> 1</a></span>
+<span class="normal"><a href="#__codelineno-2-2"> 2</a></span>
+<span class="normal"><a href="#__codelineno-2-3"> 3</a></span>
+<span class="normal"><a href="#__codelineno-2-4"> 4</a></span>
+<span class="normal"><a href="#__codelineno-2-5"> 5</a></span>
+<span class="normal"><a href="#__codelineno-2-6"> 6</a></span>
+<span class="normal"><a href="#__codelineno-2-7"> 7</a></span>
+<span class="normal"><a href="#__codelineno-2-8"> 8</a></span>
+<span class="normal"><a href="#__codelineno-2-9"> 9</a></span>
+<span class="normal"><a href="#__codelineno-2-10">10</a></span>
+<span class="normal"><a href="#__codelineno-2-11">11</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1"></a><span class="n">new</span> <span class="n">client</span>
+<a id="__codelineno-2-2" name="__codelineno-2-2"></a><span class="n">GET</span> <span class="o">/</span><span class="n">favicon</span><span class="o">.</span><span class="n">ico</span> <span class="n">HTTP</span><span class="o">/</span><span class="mf">1.1</span>
+<a id="__codelineno-2-3" name="__codelineno-2-3"></a><span class="n">Host</span><span class="p">:</span> <span class="mf">192.168.2.2</span>
+<a id="__codelineno-2-4" name="__codelineno-2-4"></a><span class="n">Connection</span><span class="p">:</span> <span class="n">keep</span><span class="o">-</span><span class="n">alive</span>
+<a id="__codelineno-2-5" name="__codelineno-2-5"></a><span class="n">Accept</span><span class="p">:</span> <span class="o">*/*</span>
+<a id="__codelineno-2-6" name="__codelineno-2-6"></a><span class="n">User</span><span class="o">-</span><span class="n">Agent</span><span class="p">:</span> <span class="n">Mozilla</span><span class="o">/</span><span class="mf">5.0</span> <span class="p">(</span><span class="n">Windows</span> <span class="n">NT</span> <span class="mf">6.2</span><span class="p">;</span> <span class="n">WOW64</span><span class="p">)</span> <span class="n">AppleWebKit</span><span class="o">/</span><span class="mf">537.22</span> <span class="p">(</span><span class="n">KHTML</span><span class="p">,</span> <span class="n">like</span> <span class="n">Gecko</span><span class="p">)</span> <span class="n">Chrome</span><span class="o">/</span><span class="mf">25.0.1364.172</span> <span class="n">Safari</span><span class="o">/</span><span class="mf">537.22</span>
+<a id="__codelineno-2-7" name="__codelineno-2-7"></a><span class="n">Accept</span><span class="o">-</span><span class="n">Encoding</span><span class="p">:</span> <span class="n">gzip</span><span class="p">,</span><span class="n">deflate</span><span class="p">,</span><span class="n">sdch</span>
+<a id="__codelineno-2-8" name="__codelineno-2-8"></a><span class="n">Accept</span><span class="o">-</span><span class="n">Language</span><span class="p">:</span> <span class="n">fr</span><span class="o">-</span><span class="n">FR</span><span class="p">,</span><span class="n">fr</span><span class="p">;</span><span class="n">q</span><span class="o">=</span><span class="mf">0.8</span><span class="p">,</span><span class="n">en</span><span class="o">-</span><span class="n">US</span><span class="p">;</span><span class="n">q</span><span class="o">=</span><span class="mf">0.6</span><span class="p">,</span><span class="n">en</span><span class="p">;</span><span class="n">q</span><span class="o">=</span><span class="mf">0.4</span>
+<a id="__codelineno-2-9" name="__codelineno-2-9"></a><span class="n">Accept</span><span class="o">-</span><span class="n">Charset</span><span class="p">:</span> <span class="n">ISO</span><span class="o">-</span><span class="mi">8859</span><span class="o">-</span><span class="mi">1</span><span class="p">,</span><span class="n">utf</span><span class="o">-</span><span class="mi">8</span><span class="p">;</span><span class="n">q</span><span class="o">=</span><span class="mf">0.7</span><span class="p">,</span><span class="o">*</span><span class="p">;</span><span class="n">q</span><span class="o">=</span><span class="mf">0.3</span>
+<a id="__codelineno-2-10" name="__codelineno-2-10"></a>
+<a id="__codelineno-2-11" name="__codelineno-2-11"></a><span class="n">client</span> <span class="n">disconnected</span>
+</code></pre></div></td></tr></table></div>
+<ul>
+  <li>líneas 2–9: encabezados HTTP estándar;
+  </li>
+  <li>línea 10: la línea vacía que las termina.
+  </li>
+</ul>
+
+<p>Estudia este ejemplo con atención. Te ayudará a comprender la programación de Arduino utilizada en el laboratorio.</p>
+<p><a id="refheading34558350318798"></a></p>
+<h2 id="66-la-biblioteca-ajson">6.6. <span style="color: #4f81bd">La biblioteca aJson</span></h2>
+<p>En el trabajo de laboratorio que vas a realizar, los Arduinos intercambian líneas de texto en formato JSON con sus clientes. Por defecto, el IDE de Arduino no incluye una biblioteca para manejar JSON. Instalaremos la biblioteca <strong>aJson</strong> disponible en [<a href="https://github.com/interactive-matter/aJson"><u><span style="color: #0563c1">https://github.com/interactive-matter/aJson</span></u></a>].</p>
+<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/100000000000016E0000006F477E7917.png" width="256" height="78" style="display:inline-block; margin:4px;width:6.78cm;height:2.057cm;" class="odt-zoomable" data-zoom-src="images/100000000000016E0000006F477E7917.png" /></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/1000000000000075000000678E04B25D.png" width="82" height="72" style="display:inline-block; margin:4px;width:2.17cm;height:1.91cm;" class="odt-zoomable" data-zoom-src="images/1000000000000075000000678E04B25D.png" /></td></tr></table>
+
+<ul>
+  <li>En [1], descarga la versión comprimida del repositorio de GitHub;
+  </li>
+  <li>descomprime la carpeta y copia la carpeta [aJson-master] [2] en la carpeta [&lt;arduino&gt;/libraries] [3], donde &lt;arduino&gt; es la carpeta de instalación del IDE de Arduino;
+  </li>
+</ul>
+
+<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/100000000000008B000001181441084E.png" width="97" height="196" style="display:inline-block; margin:4px;width:2.57cm;height:5.177cm;" class="odt-zoomable" data-zoom-src="images/100000000000008B000001181441084E.png" /></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/100000000000008F000001118289A2C0.png" width="100" height="191" style="display:inline-block; margin:4px;width:2.649cm;height:5.057cm;" class="odt-zoomable" data-zoom-src="images/100000000000008F000001118289A2C0.png" /></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/100000000000008A000000BF21167331.png" width="97" height="134" style="display:inline-block; margin:4px;width:2.559cm;height:3.542cm;" class="odt-zoomable" data-zoom-src="images/100000000000008A000000BF21167331.png" /></td></tr></table>
+
+<ul>
+  <li>en [4], cambia el nombre de esta carpeta a [aJson];
+  </li>
+  <li>en [5], su contenido.
+  </li>
+</ul>
+
+<p>Ahora, inicia el IDE de Arduino:</p>
+<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/10000000000002BE000001D7A9E9D87A.png" width="491" height="330" style="display:inline-block; margin:4px;width:13cm;height:8.722cm;" class="odt-zoomable" data-zoom-src="images/10000000000002BE000001D7A9E9D87A.png" /></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;">&nbsp;</td></tr></table>
+
+<p>Comprueba que, en la sección de ejemplos, ahora tienes ejemplos para la biblioteca <strong>aJson</strong>. Ejecuta y estudia estos ejemplos.</p>
+<p><a id="refheading472731712028290"></a></p>
+<h2 id="67-la-tableta-android">6.7. <span style="color: #4f81bd">La tableta Android</span></h2>
+<p>Los ejemplos se han probado con la Samsung Galaxy Tab 2.</p>
+<p>Para probar los ejemplos en una tableta, primero debes instalar el controlador de la tableta en tu equipo de desarrollo. El controlador para la Samsung Galaxy Tab 2 se puede encontrar en la URL [<a href="http://www.samsung.com/fr/support/usefulsoftware/KIES/"><u><span style="color: #0563c1">http://www.samsung.com/fr/support/usefulsoftware/KIES/</span></u></a>]:</p>
+<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/1000000000000290000001A457119558.png" width="435" height="279" style="display:inline-block; margin:4px;width:11.52cm;height:7.377cm;" class="odt-zoomable" data-zoom-src="images/1000000000000290000001A457119558.png" /></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;">&nbsp;</td></tr></table>
+
+<p><a id="refheading16265013307711381"></a>Para probar los ejemplos, tendrás que conectar la tableta a una red (probablemente Wi-Fi) y conocer su dirección IP en esa red. A continuación te indicamos cómo proceder (Samsung Galaxy Tab 2):</p>
+<ul>
+  <li>Enciende la tableta;
+  </li>
+  <li>Busca entre las aplicaciones disponibles en la tableta (arriba a la derecha) la que se llama [Ajustes] y tiene un icono de engranaje;
+  </li>
+  <li>en la sección de la izquierda, activa el Wi-Fi;
+  </li>
+  <li>en la sección de la derecha, selecciona una red Wi-Fi;
+  </li>
+  <li>Una vez conectado a la red, pulsa brevemente sobre la red seleccionada. Se mostrará la dirección IP de la tableta. Anótala. La necesitarás;
+  </li>
+</ul>
+
+<p>Sin salir de la aplicación [Ajustes], </p>
+<ul>
+  <li>selecciona la opción [Opciones de desarrollador] a la izquierda (en la parte inferior de las opciones);
+  </li>
+  <li>Asegúrate de que la opción [Depuración USB] de la derecha esté marcada.
+  </li>
+</ul>
+
+<p>Para volver al menú, toca el icono del centro de la barra de estado de la parte inferior, el que parece una casa. Sin salir de la barra de estado de la parte inferior,</p>
+<ul>
+  <li>el icono situado en el extremo izquierdo es el botón Atrás: te lleva a la pantalla anterior;
+  </li>
+  <li>el icono situado en el extremo derecho es el administrador de tareas. Puedes ver y gestionar todas las tareas que se están ejecutando actualmente en tu tableta;
+  </li>
+</ul>
+
+<p>Conecta tu tableta al PC con el cable USB incluido.</p>
+<p>Conecta el adaptador Wi-Fi a uno de los puertos USB del PC y, a continuación, conéctate a la misma red Wi-Fi que la tableta. Una vez hecho esto, en una ventana de DOS, escribe el comando [ipconfig]:</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-3-1"> 1</a></span>
+<span class="normal"><a href="#__codelineno-3-2"> 2</a></span>
+<span class="normal"><a href="#__codelineno-3-3"> 3</a></span>
+<span class="normal"><a href="#__codelineno-3-4"> 4</a></span>
+<span class="normal"><a href="#__codelineno-3-5"> 5</a></span>
+<span class="normal"><a href="#__codelineno-3-6"> 6</a></span>
+<span class="normal"><a href="#__codelineno-3-7"> 7</a></span>
+<span class="normal"><a href="#__codelineno-3-8"> 8</a></span>
+<span class="normal"><a href="#__codelineno-3-9"> 9</a></span>
+<span class="normal"><a href="#__codelineno-3-10">10</a></span>
+<span class="normal"><a href="#__codelineno-3-11">11</a></span>
+<span class="normal"><a href="#__codelineno-3-12">12</a></span>
+<span class="normal"><a href="#__codelineno-3-13">13</a></span>
+<span class="normal"><a href="#__codelineno-3-14">14</a></span>
+<span class="normal"><a href="#__codelineno-3-15">15</a></span>
+<span class="normal"><a href="#__codelineno-3-16">16</a></span>
+<span class="normal"><a href="#__codelineno-3-17">17</a></span>
+<span class="normal"><a href="#__codelineno-3-18">18</a></span>
+<span class="normal"><a href="#__codelineno-3-19">19</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1"></a>dos&gt;ipconfig
+<a id="__codelineno-3-2" name="__codelineno-3-2"></a>
+<a id="__codelineno-3-3" name="__codelineno-3-3"></a>Configuration IP de Windows
+<a id="__codelineno-3-4" name="__codelineno-3-4"></a>
+<a id="__codelineno-3-5" name="__codelineno-3-5"></a>Carte Ethernet Connexion au réseau local :
+<a id="__codelineno-3-6" name="__codelineno-3-6"></a>
+<a id="__codelineno-3-7" name="__codelineno-3-7"></a>   Suffixe DNS propre à la connexion. . . :
+<a id="__codelineno-3-8" name="__codelineno-3-8"></a>   Adresse IPv6 de liaison locale. . . . .: fe80::698b:455a:925:6b13%4
+<a id="__codelineno-3-9" name="__codelineno-3-9"></a>   Adresse IPv4. . . . . . . . . . . . . .: 192.168.2.1
+<a id="__codelineno-3-10" name="__codelineno-3-10"></a>   Masque de sous-réseau. . . . . . . . . : 255.255.255.0
+<a id="__codelineno-3-11" name="__codelineno-3-11"></a>   Passerelle par défaut. . . . . . . . . :
+<a id="__codelineno-3-12" name="__codelineno-3-12"></a>
+<a id="__codelineno-3-13" name="__codelineno-3-13"></a>Carte réseau sans fil Wi-Fi :
+<a id="__codelineno-3-14" name="__codelineno-3-14"></a>
+<a id="__codelineno-3-15" name="__codelineno-3-15"></a>   Suffixe DNS propre à la connexion. . . :
+<a id="__codelineno-3-16" name="__codelineno-3-16"></a>   Adresse IPv6 de liaison locale. . . . .: fe80::39aa:47f6:7537:f8e1%2
+<a id="__codelineno-3-17" name="__codelineno-3-17"></a>   Adresse IPv4. . . . . . . . . . . . . .: 192.168.1.25
+<a id="__codelineno-3-18" name="__codelineno-3-18"></a>   Masque de sous-réseau. . . . . . . . . : 255.255.255.0
+<a id="__codelineno-3-19" name="__codelineno-3-19"></a>Passerelle par défaut. . . . . . . . . : 192.168.1.1
+</code></pre></div></td></tr></table></div>
+<p>Tu PC tiene dos tarjetas de red y, por lo tanto, dos direcciones IP:</p>
+<ul>
+  <li>la de la línea 9, que es la dirección del PC en la red cableada;
+  </li>
+  <li>la de la línea 17, que es la dirección del ordenador en la red Wi-Fi;
+  </li>
+</ul>
+
+<p>Anota estos dos datos. Los necesitarás. Ahora te encuentras en la siguiente configuración:</p>
+<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/100000000000028C000001021B488ACB.png" width="326" height="129" style="display:inline-block; margin:4px;width:8.625cm;height:3.413cm;" class="odt-zoomable" data-zoom-src="images/100000000000028C000001021B488ACB.png" /></td></tr></table>
+
+<p>La tableta tendrá que conectarse a tu PC. Normalmente, tu PC está protegida por un cortafuegos que impide que cualquier dispositivo externo establezca una conexión con ella. Por lo tanto, tendrás que desactivar el cortafuegos. Hazlo mediante la opción [Panel de control\Sistema y seguridad\Cortafuegos de Windows]. A veces también es necesario desactivar el cortafuegos configurado por tu software antivirus. Esto depende de tu programa antivirus.</p>
+<p>Ahora, en tu PC, comprueba la conexión de red con la tableta utilizando el comando [ping 192.168.1.y], donde [192.168.1.y] es la dirección IP de la tableta. Deberías ver algo como esto:</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-4-1"> 1</a></span>
+<span class="normal"><a href="#__codelineno-4-2"> 2</a></span>
+<span class="normal"><a href="#__codelineno-4-3"> 3</a></span>
+<span class="normal"><a href="#__codelineno-4-4"> 4</a></span>
+<span class="normal"><a href="#__codelineno-4-5"> 5</a></span>
+<span class="normal"><a href="#__codelineno-4-6"> 6</a></span>
+<span class="normal"><a href="#__codelineno-4-7"> 7</a></span>
+<span class="normal"><a href="#__codelineno-4-8"> 8</a></span>
+<span class="normal"><a href="#__codelineno-4-9"> 9</a></span>
+<span class="normal"><a href="#__codelineno-4-10">10</a></span>
+<span class="normal"><a href="#__codelineno-4-11">11</a></span>
+<span class="normal"><a href="#__codelineno-4-12">12</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1"></a>dos&gt;ping 192.168.1.26
+<a id="__codelineno-4-2" name="__codelineno-4-2"></a>
+<a id="__codelineno-4-3" name="__codelineno-4-3"></a>Envoi d&#39;une requête &#39;Ping&#39;  192.168.1.26 avec 32 octets de données :
+<a id="__codelineno-4-4" name="__codelineno-4-4"></a>Réponse de 192.168.1.26 : octets=32 temps=244 ms TTL=64
+<a id="__codelineno-4-5" name="__codelineno-4-5"></a>Réponse de 192.168.1.26 : octets=32 temps=199 ms TTL=64
+<a id="__codelineno-4-6" name="__codelineno-4-6"></a>Réponse de 192.168.1.26 : octets=32 temps=28 ms TTL=64
+<a id="__codelineno-4-7" name="__codelineno-4-7"></a>Réponse de 192.168.1.26 : octets=32 temps=88 ms TTL=64
+<a id="__codelineno-4-8" name="__codelineno-4-8"></a>
+<a id="__codelineno-4-9" name="__codelineno-4-9"></a>Statistiques Ping pour 192.168.1.26:
+<a id="__codelineno-4-10" name="__codelineno-4-10"></a>    Paquets : envoyés = 4, reçus = 4, perdus = 0 (perte 0%),
+<a id="__codelineno-4-11" name="__codelineno-4-11"></a>Durée approximative des boucles en millisecondes :
+<a id="__codelineno-4-12" name="__codelineno-4-12"></a>Minimum = 28ms, Maximum = 244ms, Moyenne = 139ms
+</code></pre></div></td></tr></table></div>
+<p>Las líneas 4–7 indican que la dirección IP [192.168.1.y] respondió al comando [ping].</p>
+<p><a id="refheading104224374082361"></a></p>
+<h2 id="68-instalacion-de-un-jdk">6.8. <span style="color: #4f81bd">Instalación de un JDK</span></h2>
+<p><a id="refheading1633352067866943"></a>El JDK más reciente se puede encontrar en la URL [<a href="http://www.oracle.com/technetwork/java/javase/downloads/index.html"><u><span style="color: #0563c1">http://www.oracle.com/technetwork/java/javase/downloads/index.html</span></u></a>] (junio de 2016). A partir de ahora nos referiremos a la carpeta de instalación del JDK como &lt;jdk-install&gt;.</p>
+<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/10000000000002430000019EB3E42FAD.png" width="405" height="290" style="display:inline-block; margin:4px;width:10.719cm;height:7.664cm;" class="odt-zoomable" data-zoom-src="images/10000000000002430000019EB3E42FAD.png" /></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;">&nbsp;</td></tr></table>
+
+<p><a id="refheading454551405398942"></a></p>
+<h2 id="69-instalacion-del-gestor-del-emulador-genymotion">6.9. <span style="color: #4f81bd">Instalación del gestor del emulador Genymotion</span></h2>
+<p>La empresa [<a href="http://www.genymotion.com/features/"><u><span style="color: #0563c1">Genymotion</span></u></a>] ofrece un emulador de Android de alto rendimiento. Está disponible en la URL [<a href="https://cloud.genymotion.com/page/launchpad/download/"><u><span style="color: #0563c1">https://cloud.genymotion.com/page/launchpad/download/</span></u></a>] (junio de 2016).</p>
+<p>Tendrás que registrarte para obtener una versión para uso personal. Descarga el producto [Genymotion] con la máquina virtual VirtualBox:</p>
+<p><img src="images/10000000000001BF0000013FB3663995.png" width="313" height="223" style="width:8.28cm;height:5.909cm;" alt="Image" class="odt-zoomable" data-zoom-src="images/10000000000001BF0000013FB3663995.png" /></p>
+<p>A partir de ahora nos referiremos a la carpeta de instalación de [Genymotion] como &lt;genymotion-install&gt;. Inicie [Genymotion]. A continuación, descargue una imagen para una tableta:</p>
+<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/10000000000001B500000104CE528C5B.png" width="306" height="182" style="display:inline-block; margin:4px;width:8.089cm;height:4.814cm;" class="odt-zoomable" data-zoom-src="images/10000000000001B500000104CE528C5B.png" /></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;">&nbsp;</td></tr></table>
+
+<ul>
+  <li>en [1], añada el terminal virtual descrito en [2];
+  </li>
+</ul>
+
+<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/10000000000003240000011B5A0A8377.png" width="563" height="198" style="display:inline-block; margin:4px;width:14.891cm;height:5.241cm;" class="odt-zoomable" data-zoom-src="images/10000000000003240000011B5A0A8377.png" /></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;">&nbsp;</td></tr></table>
+
+<ul>
+  <li>en [3], configure el terminal;
+  </li>
+</ul>
+
+<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/100000000000017200000260E2C18E87.png" width="259" height="425" style="display:inline-block; margin:4px;width:6.849cm;height:11.255cm;" class="odt-zoomable" data-zoom-src="images/100000000000017200000260E2C18E87.png" /></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/10000000000001700000011402912093.png" width="257" height="193" style="display:inline-block; margin:4px;width:6.81cm;height:5.108cm;" class="odt-zoomable" data-zoom-src="images/10000000000001700000011402912093.png" /></td></tr></table>
+
+<ul>
+  <li>en [4-5], personalice el terminal para su entorno;
+  </li>
+  <li>en [6], inicie el terminal virtual;
+  </li>
+</ul>
+
+<p>Si todo va bien, verás la ventana del emulador de Android:</p>
+<p><img src="images/10000000000007800000043847A1FBD5.png" width="670" height="377" style="width:17.729cm;height:9.973cm;" alt="Image" class="odt-zoomable" data-zoom-src="images/10000000000007800000043847A1FBD5.png" /></p>
+<p>A veces, el emulador de Android no se inicia. En un equipo con Windows, puedes comprobar los dos puntos siguientes:</p>
+<ul>
+  <li>Comprueba que la máquina virtual [Hyper-V] no esté instalada. Si es necesario, desinstálala [1-2];
+  </li>
+</ul>
+
+<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/1000000000000266000000A6E961AB2A.png" width="369" height="100" style="display:inline-block; margin:4px;width:9.751cm;height:2.635cm;" class="odt-zoomable" data-zoom-src="images/1000000000000266000000A6E961AB2A.png" /></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/100000000000019D00000150D0B5463A.png" width="248" height="201" style="display:inline-block; margin:4px;width:6.549cm;height:5.329cm;" class="odt-zoomable" data-zoom-src="images/100000000000019D00000150D0B5463A.png" /></td></tr></table>
+
+<ul>
+  <li>luego, en el asistente de configuración [Centro de redes y recursos compartidos] [1]:
+  </li>
+</ul>
+
+<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/1000000000000232000000D4E7071ADE.png" width="393" height="148" style="display:inline-block; margin:4px;width:10.41cm;height:3.926cm;" class="odt-zoomable" data-zoom-src="images/1000000000000232000000D4E7071ADE.png" /></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;">&nbsp;</td></tr></table>
+
+<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/100000000000024A0000019E95E46960.png" width="351" height="248" style="display:inline-block; margin:4px;width:9.299cm;height:6.57cm;" class="odt-zoomable" data-zoom-src="images/100000000000024A0000019E95E46960.png" /></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/10000000000001550000015D64D8AC7B.png" width="223" height="228" style="display:inline-block; margin:4px;width:5.89cm;height:6.027cm;" class="odt-zoomable" data-zoom-src="images/10000000000001550000015D64D8AC7B.png" /></td></tr></table>
+
+<ul>
+  <li>en [3], seleccione el adaptador o adaptadores de red asociados a la máquina virtual de VirtualBox;
+  </li>
+</ul>
+
+<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/10000000000001890000008CBD16090A.png" width="275" height="98" style="display:inline-block; margin:4px;width:7.28cm;height:2.593cm;" class="odt-zoomable" data-zoom-src="images/10000000000001890000008CBD16090A.png" /></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;">&nbsp;</td></tr></table>
+
+<ul>
+  <li>Comprueba que en [6] esté marcado el controlador de VirtualBox. Repite este paso para todos los adaptadores de red asociados a la máquina virtual de VirtualBox;
+  </li>
+</ul>
+<p><a id="refheading463261712028290"></a></p>
+<h2 id="610-instalacion-de-maven">6.10. <span style="color: #4f81bd">Instalación de Maven</span></h2>
+<p>Maven es una herramienta para gestionar dependencias en un proyecto Java y mucho más. Está disponible en la URL [<a href="http://maven.apache.org/download.cgi"><u><span style="color: #0563c1">http://maven.apache.org/download.cgi</span></u></a>].</p>
+<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/10000000000001FD000000CC03B4BFB5.png" width="356" height="143" style="display:inline-block; margin:4px;width:9.419cm;height:3.775cm;" class="odt-zoomable" data-zoom-src="images/10000000000001FD000000CC03B4BFB5.png" /></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;">&nbsp;</td></tr></table>
+
+<p>Descarga y descomprime el archivo. Nos referiremos a la carpeta de instalación de Maven como &lt;maven-install&gt;.</p>
+<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/10000000000001130000009C5AD23345.png" width="192" height="109" style="display:inline-block; margin:4px;width:5.091cm;height:2.887cm;" class="odt-zoomable" data-zoom-src="images/10000000000001130000009C5AD23345.png" /></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;">&nbsp;</td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;">&nbsp;</td></tr></table>
+
+<ul>
+  <li>En [1], el archivo [conf/settings.xml] configura Maven;
+  </li>
+</ul>
+
+<p>Contiene las siguientes líneas:</p>
+<div class="odt-code-rich" data-linenums="true" style="counter-reset: odtline 0;"><pre><code class="language-text">
+<span class="odt-code-line"><span class="odt-code-line-content">  <span style="color:#000000">&lt;!-- localRepository</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">   | The path to the local repository maven will use to store artifacts.</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">   |</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">   | Default: ${user.home}/.m2/repository</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">  &lt;localRepository&gt;/path/to/local/repo&lt;/localRepository&gt;</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">--&gt;</span></span>
+</code></pre></div>
+
+<p>El valor predeterminado de la línea 4, si —como en mi caso— la ruta {user.home} contiene un espacio (por ejemplo, [C:\Users\Serge Tahé]), puede causar problemas con cierto software. En ese caso, deberías escribir algo como:</p>
+<div class="odt-code-rich" data-linenums="true" style="counter-reset: odtline 0;"><pre><code class="language-text">
+<span class="odt-code-line"><span class="odt-code-line-content">  <span style="color:#000000">&lt;!-- localRepository</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">   | The path to the local repository maven will use to store artifacts.</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">   |</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">   | Default: ${user.home}/.m2/repository</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">  &lt;localRepository&gt;/path/to/local/repo&lt;/localRepository&gt;</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">  --&gt;</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#008080">&lt;</span><span style="color:#3f7f7f">localRepository</span><span style="color:#008080">&gt;</span><span style="color:#ff0000">D:\Programs\devjava\maven\.m2\repository</span><span style="color:#008080">&lt;/</span><span style="color:#3f7f7f">localRepository</span><span style="color:#008080">&gt;</span></span></span>
+</code></pre></div>
+
+<p>y en la línea 7, evitaremos una ruta que contenga espacios.</p>
+<p><a id="refheading2088641855421712"></a></p>
+<h2 id="611-instalacion-del-ide-de-android-studio">6.11. <span style="color: #4f81bd">Instalación del IDE de Android Studio</span></h2>
+<p>El IDE Android Studio Community Edition está disponible en [<a href="https://developer.android.com/studio/index.html"><u><span style="color: #0563c1">https://developer.android.com/studio/index.html</span></u></a>] (junio de 2016):</p>
+<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/10000000000001DF000001975C35AD5C.png" width="335" height="285" style="display:inline-block; margin:4px;width:8.871cm;height:7.539cm;" class="odt-zoomable" data-zoom-src="images/10000000000001DF000001975C35AD5C.png" /></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;">&nbsp;</td></tr></table>
+
+<p>Instala el IDE y, a continuación, ejecútalo. Sigue los pasos [1-8] para instalar los componentes del SDK Manager que utilizan los ejemplos que vienen a continuación. Si decides instalar componentes más recientes, es probable que recibas advertencias de Android Studio indicando que la configuración del ejemplo hace referencia a componentes del SDK que no existen en tu entorno. En ese caso, puedes seguir las sugerencias que te ofrece el IDE.</p>
+<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/10000000000002C60000020165457C1D.png" width="497" height="359" style="display:inline-block; margin:4px;width:13.15cm;height:9.5cm;" class="odt-zoomable" data-zoom-src="images/10000000000002C60000020165457C1D.png" /></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;">&nbsp;</td></tr></table>
+
+<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/10000000000002CC0000011F747B0639.png" width="501" height="201" style="display:inline-block; margin:4px;width:13.259cm;height:5.315cm;" class="odt-zoomable" data-zoom-src="images/10000000000002CC0000011F747B0639.png" /></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;">&nbsp;</td></tr></table>
+
+<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/10000000000003F40000025CE14B0802.png" width="607" height="362" style="display:inline-block; margin:4px;width:16.06cm;height:9.585cm;" class="odt-zoomable" data-zoom-src="images/10000000000003F40000025CE14B0802.png" /></td></tr></table>
+
+<ul>
+  <li>En [9], consulta los detalles del paquete:
+  </li>
+</ul>
+
+<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/10000000000001A9000001A36EDCB210.png" width="297" height="293" style="display:inline-block; margin:4px;width:7.87cm;height:7.759cm;" class="odt-zoomable" data-zoom-src="images/10000000000001A9000001A36EDCB210.png" /></td></tr></table>
+
+<ul>
+  <li>En [11] anterior, los ejemplos utilizaban SDK Build-Tools 23.0.3;
+  </li>
+  <li>en [9-12] a continuación, especifique la carpeta donde instaló el gestor del emulador [Genymotion];
+  </li>
+</ul>
+
+<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/10000000000001050000009F11F171D5.png" width="183" height="111" style="display:inline-block; margin:4px;width:4.83cm;height:2.942cm;" class="odt-zoomable" data-zoom-src="images/10000000000001050000009F11F171D5.png" /></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/10000000000002200000012850203354.png" width="381" height="207" style="display:inline-block; margin:4px;width:10.07cm;height:5.479cm;" class="odt-zoomable" data-zoom-src="images/10000000000002200000012850203354.png" /></td></tr></table>
+
+<ul>
+  <li>En [13-18], configura el tipo de proyecto predeterminado;
+  </li>
+</ul>
+
+<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/100000000000013B00000111F6B46B8A.png" width="220" height="191" style="display:inline-block; margin:4px;width:5.83cm;height:5.054cm;" class="odt-zoomable" data-zoom-src="images/100000000000013B00000111F6B46B8A.png" /></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/10000000000001E000000107F78F9517.png" width="336" height="184" style="display:inline-block; margin:4px;width:8.89cm;height:4.872cm;" class="odt-zoomable" data-zoom-src="images/10000000000001E000000107F78F9517.png" /></td></tr></table>
+
+<ul>
+  <li>en [17], el valor predeterminado suele ser correcto;
+  </li>
+  <li>en [18], asegúrate de que tienes JDK 1.8;
+  </li>
+</ul>
+
+<p>A continuación, en [19-26], desactiva la corrección ortográfica, que está configurada en inglés por defecto;</p>
+<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/10000000000000BA00000089507D0BAE.png" width="130" height="96" style="display:inline-block; margin:4px;width:3.44cm;height:2.535cm;" class="odt-zoomable" data-zoom-src="images/10000000000000BA00000089507D0BAE.png" /></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/10000000000001CB000000AB20F1052A.png" width="321" height="120" style="display:inline-block; margin:4px;width:8.5cm;height:3.166cm;" class="odt-zoomable" data-zoom-src="images/10000000000001CB000000AB20F1052A.png" /></td></tr></table>
+
+<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/1000000000000286000001B2EE916F3D.png" width="452" height="304" style="display:inline-block; margin:4px;width:11.959cm;height:8.035cm;" class="odt-zoomable" data-zoom-src="images/1000000000000286000001B2EE916F3D.png" /></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;">&nbsp;</td></tr></table>
+
+<ul>
+  <li>A continuación, en [27-28], elige el tipo de atajos de teclado que desees. Puedes mantener la configuración predeterminada de IntelliJ o elegir la de otro IDE al que estés más acostumbrado;
+  </li>
+</ul>
+
+<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/10000000000001DE000001086F08019D.png" width="334" height="185" style="display:inline-block; margin:4px;width:8.849cm;height:4.888cm;" class="odt-zoomable" data-zoom-src="images/10000000000001DE000001086F08019D.png" /></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;">&nbsp;</td></tr></table>
+
+<ul>
+  <li>A continuación, en [29-30], activa los números de línea en el código;
+  </li>
+</ul>
+
+<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/1000000000000328000001D464C39428.png" width="565" height="327" style="display:inline-block; margin:4px;width:14.96cm;height:8.664cm;" class="odt-zoomable" data-zoom-src="images/1000000000000328000001D464C39428.png" /></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;">&nbsp;</td></tr></table>
+
+<ul>
+  <li>A continuación, en [31-34], especifique cómo desea gestionar el primer proyecto al iniciar el IDE y los proyectos posteriores;
+  </li>
+</ul>
+
+<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/100000000000023E00000133000D1C1A.png" width="402" height="215" style="display:inline-block; margin:4px;width:10.629cm;height:5.685cm;" class="odt-zoomable" data-zoom-src="images/100000000000023E00000133000D1C1A.png" /></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;">&nbsp;</td></tr></table>
+
+<p>Con Android 2.1 (mayo de 2016), la función [Instant Run] a veces causa problemas. En este documento, la hemos desactivado:</p>
+<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/10000000000000AD000000D15DA6F047.png" width="121" height="146" style="display:inline-block; margin:4px;width:3.2cm;height:3.866cm;" class="odt-zoomable" data-zoom-src="images/10000000000000AD000000D15DA6F047.png" /></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/100000000000027500000159C10481FB.png" width="431" height="237" style="display:inline-block; margin:4px;width:11.416cm;height:6.262cm;" class="odt-zoomable" data-zoom-src="images/100000000000027500000159C10481FB.png" /></td></tr></table>
+
+<ul>
+  <li>en [3-4], se ha desactivado todo;
+  </li>
+</ul>
+<p><a id="refheading90386104415204"></a></p>
+<h2 id="612-uso-de-los-ejemplos">6.12. <span style="color: #4f81bd">Uso de los ejemplos</span></h2>
+<p>Los proyectos de Android Studio para los ejemplos están disponibles AQUÍ|. Descárgalos.</p>
+<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;">&nbsp;</td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/10000000000000CB000000D922536AB3.png" width="143" height="153" style="display:inline-block; margin:4px;width:3.78cm;height:4.041cm;" class="odt-zoomable" data-zoom-src="images/10000000000000CB000000D922536AB3.png" /></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;">&nbsp;</td></tr></table>
+
+<p>Los ejemplos se han creado utilizando los componentes definidos anteriormente:</p>
+<ul>
+  <li>JDK 1.8;
+  </li>
+  <li>Android SDK Platform 23 para el tiempo de ejecución;
+  </li>
+</ul>
+
+<p>Las siguientes herramientas del SDK:</p>
+<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/1000000000000245000000ECB2E0B2B3.png" width="407" height="165" style="display:inline-block; margin:4px;width:10.76cm;height:4.371cm;" class="odt-zoomable" data-zoom-src="images/1000000000000245000000ECB2E0B2B3.png" /></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;">&nbsp;</td></tr></table>
+
+<p>Si tu entorno no coincide con el descrito anteriormente, tendrás que modificar la configuración del proyecto. Esto puede resultar bastante tedioso. Al principio, probablemente sea más fácil configurar un entorno de trabajo similar al descrito anteriormente.</p>
+<p>Inicia Android Studio y, a continuación, abre el proyecto [example-07], por ejemplo:</p>
+<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/10000000000001380000010D153E4CA0.png" width="218" height="188" style="display:inline-block; margin:4px;width:5.78cm;height:4.983cm;" class="odt-zoomable" data-zoom-src="images/10000000000001380000010D153E4CA0.png" /></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/100000000000012A000000F419EBE79C.png" width="209" height="171" style="display:inline-block; margin:4px;width:5.519cm;height:4.519cm;" class="odt-zoomable" data-zoom-src="images/100000000000012A000000F419EBE79C.png" /></td></tr></table>
+
+<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/100000000000011D00000119FF833463.png" width="200" height="197" style="display:inline-block; margin:4px;width:5.279cm;height:5.205cm;" class="odt-zoomable" data-zoom-src="images/100000000000011D00000119FF833463.png" /></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;">&nbsp;</td></tr></table>
+
+<ul>
+  <li>En [1-3], abre el proyecto [Example-07];
+  </li>
+  <li>En [4], compruebe el archivo [local.properties];
+  </li>
+</ul>
+
+<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/100000000000024E000000ECC40257B1.png" width="413" height="165" style="display:inline-block; margin:4px;width:10.931cm;height:4.373cm;" class="odt-zoomable" data-zoom-src="images/100000000000024E000000ECC40257B1.png" /></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/10000000000000A6000000CCCC109706.png" width="116" height="143" style="display:inline-block; margin:4px;width:3.069cm;height:3.771cm;" class="odt-zoomable" data-zoom-src="images/10000000000000A6000000CCCC109706.png" /></td></tr></table>
+
+<ul>
+  <li>en la línea 11 anterior, introduce la ubicación del Administrador del SDK de Android &lt;sdk-manager-install&gt;. Puedes encontrarla siguiendo los pasos [1-4]:
+  </li>
+</ul>
+
+<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/10000000000002A70000011482D83565.png" width="475" height="193" style="display:inline-block; margin:4px;width:12.569cm;height:5.108cm;" class="odt-zoomable" data-zoom-src="images/10000000000002A70000011482D83565.png" /></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;">&nbsp;</td></tr></table>
+
+<p>Todos los ejemplos de este documento son proyectos Gradle configurados mediante un archivo [build.gradle] [1-2]:</p>
+<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/100000000000014F00000125830029DB.png" width="234" height="205" style="display:inline-block; margin:4px;width:6.2cm;height:5.422cm;" class="odt-zoomable" data-zoom-src="images/100000000000014F00000125830029DB.png" /></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;">&nbsp;</td></tr></table>
+
+<p>El archivo [build.gradle] del ejemplo 07 es el siguiente:</p>
+<div class="odt-code-rich" data-linenums="true" style="counter-reset: odtline 0;"><pre><code class="language-python">
+<span class="odt-code-line"><span class="odt-code-line-content">buildscript {</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">  repositories {</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">    mavenCentral()</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">    mavenLocal()</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">  }</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">  dependencies {</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">    <span style="font-style:italic;color:#808080">// replace with the current version of the Android plugin</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#808080">    </span>classpath <span style="color:#008000">&#x27;com.android.tools.build:gradle:2.1.0&#x27;</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">    <span style="color:#008000">// Since Android&#x27;s Gradle plugin 0.11, you have to use android-apt &gt;= 1.3</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#808080">    </span>classpath <span style="color:#008000">&#x27;com.neenbedankt.gradle.plugins:android-apt:1.8&#x27;</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#008000">  </span>}</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">}</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"> </span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">apply <span style="color:#008000">plugin</span>: <span style="color:#008000">&#x27;com.android.application&#x27;</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">apply <span style="color:#008000">plugin</span>: <span style="color:#008000">&#x27;android-apt&#x27;</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000043">def </span>AAVersion = <span style="color:#008000">&#x27;4.0.0&#x27;</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"> </span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">dependencies {</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">  apt <span style="color:#008000">&quot;org.androidannotations:androidannotations:</span>$AAVersion<span style="color:#008000">&quot;</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#008000">  </span>compile <span style="color:#008000">&quot;org.androidannotations:androidannotations-api:</span>$AAVersion<span style="color:#008000">&quot;</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#008000">  </span>compile <span style="color:#008000">&#x27;com.android.support:appcompat-v7:23.4.0&#x27;</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#008000">  </span>compile <span style="color:#008000">&#x27;com.android.support:design:23.4.0&#x27;</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#008000">  </span>compile fileTree(<span style="color:#008000">dir</span>: <span style="color:#008000">&#x27;libs&#x27;</span>, <span style="color:#008000">include</span>: [<span style="color:#008000">&#x27;*.jar&#x27;</span>])</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">}</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"> </span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">repositories {</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">  jcenter()</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">}</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"> </span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">apt {</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">  arguments {</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">    androidManifestFile <span style="color:#808000">variant</span>.outputs[<span style="color:#0000ff">0</span>].processResources.manifestFile</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">    resourcePackageName android.defaultConfig.applicationId</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">  }</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">}</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"> </span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">android {</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">  compileSdkVersion <span style="color:#0000ff">23</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#0000ff">  </span>buildToolsVersion <span style="color:#008000">&quot;23.0.3&quot;</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#008000">  </span>defaultConfig {</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">    applicationId <span style="color:#008000">&quot;android.exemples&quot;</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#008000">    </span>minSdkVersion <span style="color:#0000ff">15</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#0000ff">    </span>targetSdkVersion <span style="color:#0000ff">23</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#0000ff">    </span>versionCode <span style="color:#0000ff">1</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#0000ff">    </span>versionName <span style="color:#008000">&quot;1.0&quot;</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#008000">  </span>}</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"> </span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">  buildTypes {</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">    release {</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">      minifyEnabled <span style="color:#000043">false</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000043">      </span>proguardFiles getDefaultProguardFile(<span style="color:#008000">&#x27;proguard-android.txt&#x27;</span>), <span style="color:#008000">&#x27;proguard-rules.pro&#x27;</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#008000">    </span>}</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">  }</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"> </span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">  compileOptions {</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">    sourceCompatibility JavaVersion.<span style="font-style:italic;color:#660e7a">VERSION_1_7</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#660e7a">    </span>targetCompatibility JavaVersion.<span style="font-style:italic;color:#660e7a">VERSION_1_7</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#660e7a">  </span>}</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">}</span></span>
+</code></pre></div>
+
+<p>Dependiendo del entorno de Android (SDK y herramientas) que hayas configurado, es posible que tengas que cambiar las versiones en las líneas 8, 21, 22, 38 y 39. Android Studio te ayuda ofreciéndote sugerencias. Lo más sencillo es seguir estas sugerencias.</p>
+<p>Se puede acceder a los elementos del archivo [build.gradle] de otra manera:</p>
+<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/1000000000000121000000792FB49FF3.png" width="202" height="85" style="display:inline-block; margin:4px;width:5.35cm;height:2.24cm;" class="odt-zoomable" data-zoom-src="images/1000000000000121000000792FB49FF3.png" /></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/1000000000000243000001726A68236F.png" width="405" height="259" style="display:inline-block; margin:4px;width:10.719cm;height:6.849cm;" class="odt-zoomable" data-zoom-src="images/1000000000000243000001726A68236F.png" /></td></tr></table>
+
+<ul>
+  <li>las distintas pestañas de [3] reflejan los diferentes valores del archivo [build.gradle]. Por lo tanto, puedes configurarlo de esta manera, lo que te permite evitar problemas de sintaxis en el archivo [build.gradle];
+  </li>
+</ul>
+
+<p>Otro punto que hay que comprobar es el JDK utilizado por el IDE [5]:</p>
+<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/10000000000002090000010D9E14BD90.png" width="365" height="188" style="display:inline-block; margin:4px;width:9.65cm;height:4.981cm;" class="odt-zoomable" data-zoom-src="images/10000000000002090000010D9E14BD90.png" /></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;">&nbsp;</td></tr></table>
+
+<p>En [6], comprueba el JDK.</p>
+<p>Todos los ejemplos son proyectos Gradle con dependencias que deben descargarse. Para ello, proceda de la siguiente manera:</p>
+<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/10000000000002510000019D67133862.png" width="415" height="289" style="display:inline-block; margin:4px;width:10.98cm;height:7.646cm;" class="odt-zoomable" data-zoom-src="images/10000000000002510000019D67133862.png" /></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/100000000000013C0000009DC85FE3D4.png" width="221" height="110" style="display:inline-block; margin:4px;width:5.851cm;height:2.907cm;" class="odt-zoomable" data-zoom-src="images/100000000000013C0000009DC85FE3D4.png" /><img src="images/10000000000000D40000008CC0EF1C54.png" width="149" height="98" style="display:inline-block; margin:4px;width:3.93cm;height:2.595cm;" class="odt-zoomable" data-zoom-src="images/10000000000000D40000008CC0EF1C54.png" /></td></tr></table>
+
+<ul>
+  <li>En [5], compila el proyecto;
+  </li>
+</ul>
+
+<p>Una vez que el proyecto no presente errores, debes crear una configuración de ejecución [1-8]:</p>
+<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/10000000000000B9000000ACF4E99A72.png" width="130" height="121" style="display:inline-block; margin:4px;width:3.431cm;height:3.191cm;" class="odt-zoomable" data-zoom-src="images/10000000000000B9000000ACF4E99A72.png" /></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/10000000000002A2000001AC48716E99.png" width="472" height="300" style="display:inline-block; margin:4px;width:12.48cm;height:7.925cm;" class="odt-zoomable" data-zoom-src="images/10000000000002A2000001AC48716E99.png" /></td></tr></table>
+
+<ul>
+  <li>En [8], puedes especificar que siempre quieres utilizar el mismo terminal para la ejecución. Por lo general, esta opción se marca para evitar tener que especificar el terminal que se va a utilizar en cada nueva ejecución. Aquí la dejamos sin marcar porque vamos a probar diferentes dispositivos Android;
+  </li>
+  <li>Una vez creada la configuración de ejecución, inicie el Administrador del emulador de Android [1-3];
+  </li>
+</ul>
+
+<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/10000000000000F800000087D77359A5.png" width="173" height="94" style="display:inline-block; margin:4px;width:4.59cm;height:2.499cm;" class="odt-zoomable" data-zoom-src="images/10000000000000F800000087D77359A5.png" /></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/10000000000002200000015677631F39.png" width="381" height="239" style="display:inline-block; margin:4px;width:10.07cm;height:6.331cm;" class="odt-zoomable" data-zoom-src="images/10000000000002200000015677631F39.png" /></td></tr></table>
+
+<ul>
+  <li>si el emulador de Android no se inicia, compruebe los puntos mencionados en la sección<a href="#refheading2088641855421712"><u><span style="color: #0563c1"> 6.11</span></u></a>;
+  </li>
+</ul>
+
+<p>Para iniciar la aplicación en el emulador, proceda de la siguiente manera [1-4]:</p>
+<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/10000000000000DE00000085CD268A40.png" width="155" height="93" style="display:inline-block; margin:4px;width:4.11cm;height:2.462cm;" class="odt-zoomable" data-zoom-src="images/10000000000000DE00000085CD268A40.png" /></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/10000000000002720000013DA8E59170.png" width="438" height="222" style="display:inline-block; margin:4px;width:11.591cm;height:5.87cm;" class="odt-zoomable" data-zoom-src="images/10000000000002720000013DA8E59170.png" /></td></tr></table>
+
+<ul>
+  <li>en [2], deberías ver el emulador que has iniciado anteriormente;
+  </li>
+</ul>
+
+<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/10000000000003870000021404DA97A0.png" width="542" height="319" style="display:inline-block; margin:4px;width:14.33cm;height:8.442cm;" class="odt-zoomable" data-zoom-src="images/10000000000003870000021404DA97A0.png" /></td></tr></table>
+
+<ul>
+  <li>en [5], la vista que muestra el emulador;
+  </li>
+</ul>
+
+<p>Ahora conecta una tableta Android a un puerto USB del PC y ejecuta la aplicación en ella:</p>
+<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/10000000000002720000013D5BE4320E.png" width="438" height="222" style="display:inline-block; margin:4px;width:11.591cm;height:5.87cm;" class="odt-zoomable" data-zoom-src="images/10000000000002720000013D5BE4320E.png" /></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;">&nbsp;</td></tr></table>
+
+<ul>
+  <li>En [6], selecciona la tableta Android y prueba la aplicación.
+  </li>
+</ul>
+
+<p>En [7], tenemos terminales virtuales predefinidas. Aprenderemos a añadirlas y eliminarlas.</p>
+<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/10000000000000BD000000777964780B.png" width="132" height="83" style="display:inline-block; margin:4px;width:3.5cm;height:2.205cm;" class="odt-zoomable" data-zoom-src="images/10000000000000BD000000777964780B.png" /></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;">&nbsp;</td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;">&nbsp;</td></tr></table>
+
+<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/10000000000003ED000001A3061C34B0.png" width="603" height="251" style="display:inline-block; margin:4px;width:15.951cm;height:6.65cm;" class="odt-zoomable" data-zoom-src="images/10000000000003ED000001A3061C34B0.png" /></td></tr></table>
+
+<p>En la captura de pantalla anterior, todos los dispositivos que aparecen utilizan la API 22. Los vamos a eliminar todos porque queremos utilizar la API 23. Seguimos el procedimiento [2-3] para eliminar los dispositivos.</p>
+<p><img src="images/1000000000000378000002CF7B354E3C.png" width="533" height="431" style="width:14.09cm;height:11.409cm;" alt="Image" class="odt-zoomable" data-zoom-src="images/1000000000000378000002CF7B354E3C.png" /></p>
+<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/10000000000002AE00000195848D4D13.png" width="480" height="283" style="display:inline-block; margin:4px;width:12.7cm;height:7.498cm;" class="odt-zoomable" data-zoom-src="images/10000000000002AE00000195848D4D13.png" /></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;">&nbsp;</td></tr></table>
+
+<ul>
+  <li>En [4-5], añadimos una tableta;
+  </li>
+</ul>
+
+<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/100000000000028F000000E4D326DD8F.png" width="458" height="160" style="display:inline-block; margin:4px;width:12.13cm;height:4.223cm;" class="odt-zoomable" data-zoom-src="images/100000000000028F000000E4D326DD8F.png" /></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;">&nbsp;</td></tr></table>
+
+<ul>
+  <li>en [6], seleccionamos una API. Arriba, seleccionamos la API 23 para Windows de 64 bits;
+  </li>
+</ul>
+
+<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/10000000000002B1000002060D050D98.png" width="482" height="363" style="display:inline-block; margin:4px;width:12.76cm;height:9.594cm;" class="odt-zoomable" data-zoom-src="images/10000000000002B1000002060D050D98.png" /></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;">&nbsp;</td></tr></table>
+
+<ul>
+  <li>En [7], se muestra el resumen de la configuración;
+  </li>
+  <li>En [8], se puede realizar una configuración más avanzada del terminal virtual;
+  </li>
+</ul>
+
+<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/1000000000000375000000D2EB2AAEFE.png" width="619" height="147" style="display:inline-block; margin:4px;width:16.39cm;height:3.889cm;" class="odt-zoomable" data-zoom-src="images/1000000000000375000000D2EB2AAEFE.png" /></td></tr></table>
+
+<p>Una vez completado el asistente, el terminal creado aparece en [9].</p>
+<p>Una vez hecho esto, si vuelves a ejecutar [Ejemplo-07], verás ahora la siguiente ventana:</p>
+<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/10000000000002720000013D4D2C805D.png" width="438" height="222" style="display:inline-block; margin:4px;width:11.591cm;height:5.87cm;" class="odt-zoomable" data-zoom-src="images/10000000000002720000013D4D2C805D.png" /></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;">&nbsp;</td></tr></table>
+
+<ul>
+  <li>en [1], aparece el nuevo terminal virtual;
+  </li>
+  <li>en [2], puedes crear otras nuevas;
+  </li>
+</ul>
+
+<p>Prueba para determinar cuál es el terminal virtual más adecuado para tu sistema. En este documento, los ejemplos se han probado principalmente con el emulador Genymotion.</p>
+<p>Independientemente del terminal virtual elegido, los registros se muestran en la ventana denominada [Logcat] [1-2]:</p>
+<p><img src="images/1000000000000196000001527803F3E2.png" width="284" height="237" style="width:7.519cm;height:6.26cm;" alt="Image" class="odt-zoomable" data-zoom-src="images/1000000000000196000001527803F3E2.png" /></p>
+<p>Revisa estos registros con regularidad. Aquí es donde se informará de las excepciones que provocaron el bloqueo de tu programa.</p>
+<p>También puede depurar su programa utilizando herramientas de depuración estándar:</p>
+<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/10000000000000E600000075FE31EBB3.png" width="161" height="82" style="display:inline-block; margin:4px;width:4.26cm;height:2.168cm;" class="odt-zoomable" data-zoom-src="images/10000000000000E600000075FE31EBB3.png" /></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/10000000000001B3000000A80F8B7C6D.png" width="304" height="118" style="display:inline-block; margin:4px;width:8.05cm;height:3.11cm;" class="odt-zoomable" data-zoom-src="images/10000000000001B3000000A80F8B7C6D.png" /></td></tr></table>
+
+<ul>
+  <li>en [2], establece un punto de interrupción haciendo clic una vez en la columna situada a la izquierda de la línea de destino. Al hacer clic de nuevo, se elimina el punto de interrupción;
+  </li>
+</ul>
+
+<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/10000000000001E4000000F1664D6354.png" width="339" height="169" style="display:inline-block; margin:4px;width:8.961cm;height:4.463cm;" class="odt-zoomable" data-zoom-src="images/10000000000001E4000000F1664D6354.png" /></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;">&nbsp;</td></tr></table>
+
+<ul>
+  <li>en [3], en el punto de interrupción, pulse:
+  </li>
+  <li>[F6] para ejecutar la línea sin entrar en los métodos si la línea contiene llamadas a métodos,
+  </li>
+  <li>[F5], para ejecutar la línea entrando en los métodos si la línea contiene llamadas a métodos,
+  </li>
+  <li>[F8] para continuar hasta el siguiente punto de interrupción;
+  </li>
+  <li>[Ctrl-F2] para detener la depuración;
+  </li>
+</ul>
+<p><a id="refheading2334521890746156"></a></p>
+<h2 id="613-instalacion-del-complemento-de-chrome-advanced-rest-client">6.13. <span style="color: #4f81bd">Instalación del complemento de Chrome [Advanced Rest Client]</span></h2>
+<p>En este documento utilizamos el navegador <strong>Chrome</strong> de Google (<a href="http://www.google.fr/intl/fr/chrome/browser/"><u><span style="color: #0563c1">http://www.google.fr/intl/fr/chrome/browser/</span></u></a>). Le añadiremos la extensión [<a id="advanced-rest-client"></a> Advanced Rest Client]. A continuación te explicamos cómo hacerlo:</p>
+<ul>
+  <li>Ve a la [Google Web Store] (<a href="https://chrome.google.com/webstore"><u><span style="color: #0563c1">https://chrome.google.com/webstore</span></u></a>) utilizando el navegador Chrome;
+  </li>
+  <li>busca la aplicación [Advanced Rest Client]:
+  </li>
+</ul>
+
+<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/10000000000001B0000000D21DA44C58.png" width="302" height="147" style="display:inline-block; margin:4px;width:7.999cm;height:3.888cm;" class="odt-zoomable" data-zoom-src="images/10000000000001B0000000D21DA44C58.png" /></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;">&nbsp;</td></tr></table>
+
+<ul>
+  <li>La aplicación estará entonces disponible para su descarga:
+  </li>
+</ul>
+
+<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/10000000000003BB000000AE1112526C.png" width="661" height="120" style="display:inline-block; margin:4px;width:17.48cm;height:3.186cm;" class="odt-zoomable" data-zoom-src="images/10000000000003BB000000AE1112526C.png" /></td></tr></table>
+
+<ul>
+  <li>Para descargarla, tendrás que crear una cuenta de Google. A continuación, la [Google Web Store] te pedirá que confirmes [1]:
+  </li>
+</ul>
+
+<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/10000000000001880000010483433BD4.png" width="274" height="182" style="display:inline-block; margin:4px;width:7.26cm;height:4.815cm;" class="odt-zoomable" data-zoom-src="images/10000000000001880000010483433BD4.png" /></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/100000000000021F000001B6AC8B88FF.png" width="334" height="269" style="display:inline-block; margin:4px;width:8.839cm;height:7.13cm;" class="odt-zoomable" data-zoom-src="images/100000000000021F000001B6AC8B88FF.png" /></td></tr></table>
+
+<ul>
+  <li>En [2], la extensión añadida está disponible en la opción [Aplicaciones] [3]. Esta opción aparece en cada nueva pestaña que abras (CTRL-T) en el navegador.
+  </li>
+</ul>
+<p><a id="refheading191922103626402"></a>
+<a id="json"></a></p>
+<h2 id="614-gestion-de-objetos-json-en-java">6.14. <span style="color: #4f81bd">Gestión de objetos JSON en Java</span></h2>
+<p>De forma transparente para el desarrollador, el marco [Spring MVC] utiliza la biblioteca JSON [Jackson]. Para ilustrar qué es JSON (JavaScript Object Notation), presentamos aquí un programa que serializa objetos en JSON y realiza la operación inversa deserializando las cadenas JSON generadas para recrear los objetos originales.</p>
+<p>La biblioteca «Jackson» te permite construir:</p>
+<ul>
+  <li>la cadena JSON de un objeto: <i>new ObjectMapper().writeValueAsString(object)</i>;
+  </li>
+  <li>un objeto a partir de una cadena JSON: <i>new ObjectMapper().readValue(jsonString, Object.class)</i>.
+  </li>
+</ul>
+
+<p>Ambos métodos pueden lanzar una <em>IOException</em>. A continuación se muestra un ejemplo.</p>
+<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/10000000000000D5000000EFB3DEB6F9.png" width="149" height="167" style="display:inline-block; margin:4px;width:3.941cm;height:4.422cm;" class="odt-zoomable" data-zoom-src="images/10000000000000D5000000EFB3DEB6F9.png" /></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;">&nbsp;</td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;">&nbsp;</td></tr></table>
+
+<p>El proyecto anterior es un proyecto Maven con el siguiente archivo [pom.xml];</p>
+<div class="odt-code-rich" data-linenums="true" style="counter-reset: odtline 0;"><pre><code class="language-xml">
+<span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#008080">&lt;?</span><span style="color:#3f7f7f">xml</span> <span style="color:#7f007f">version</span><span style="color:#000000">=</span><span style="font-style:italic;color:#2a00ff">&quot;1.0&quot;</span> <span style="color:#7f007f">encoding</span><span style="color:#000000">=</span><span style="font-style:italic;color:#2a00ff">&quot;UTF-8&quot;</span><span style="color:#008080">?&gt;</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#008080">&lt;</span><span style="color:#3f7f7f">project</span> <span style="color:#7f007f">xmlns</span><span style="color:#000000">=</span><span style="font-style:italic;color:#2a00ff">&quot;http://maven.apache.org/POM/4.0.0&quot;</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">         <span style="color:#7f007f">xmlns:xsi</span><span style="color:#000000">=</span><span style="font-style:italic;color:#2a00ff">&quot;http://www.w3.org/2001/XMLSchema-instance&quot;</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">         <span style="color:#7f007f">xsi:schemaLocation</span><span style="color:#000000">=</span><span style="font-style:italic;color:#2a00ff">&quot;http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd&quot;</span><span style="color:#008080">&gt;</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">  </span><span style="color:#008080">&lt;</span><span style="color:#3f7f7f">modelVersion</span><span style="color:#008080">&gt;</span><span style="color:#000000">4.0.0</span><span style="color:#008080">&lt;/</span><span style="color:#3f7f7f">modelVersion</span><span style="color:#008080">&gt;</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"> </span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">  </span><span style="color:#008080">&lt;</span><span style="color:#3f7f7f">groupId</span><span style="color:#008080">&gt;</span><span style="color:#000000">istia.st.pam</span><span style="color:#008080">&lt;/</span><span style="color:#3f7f7f">groupId</span><span style="color:#008080">&gt;</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">  </span><span style="color:#008080">&lt;</span><span style="color:#3f7f7f">artifactId</span><span style="color:#008080">&gt;</span><span style="color:#000000">json</span><span style="color:#008080">&lt;/</span><span style="color:#3f7f7f">artifactId</span><span style="color:#008080">&gt;</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">  </span><span style="color:#008080">&lt;</span><span style="color:#3f7f7f">version</span><span style="color:#008080">&gt;</span><span style="color:#000000">1.0-SNAPSHOT</span><span style="color:#008080">&lt;/</span><span style="color:#3f7f7f">version</span><span style="color:#008080">&gt;</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"> </span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">  </span><span style="color:#008080">&lt;</span><span style="color:#3f7f7f">dependencies</span><span style="color:#008080">&gt;</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">    </span><span style="color:#008080">&lt;</span><span style="color:#3f7f7f">dependency</span><span style="color:#008080">&gt;</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">      </span><span style="color:#008080">&lt;</span><span style="color:#3f7f7f">groupId</span><span style="color:#008080">&gt;</span><span style="color:#000000">com.fasterxml.jackson.core</span><span style="color:#008080">&lt;/</span><span style="color:#3f7f7f">groupId</span><span style="color:#008080">&gt;</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">      </span><span style="color:#008080">&lt;</span><span style="color:#3f7f7f">artifactId</span><span style="color:#008080">&gt;</span><span style="color:#000000">jackson-databind</span><span style="color:#008080">&lt;/</span><span style="color:#3f7f7f">artifactId</span><span style="color:#008080">&gt;</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">      </span><span style="color:#008080">&lt;</span><span style="color:#3f7f7f">version</span><span style="color:#008080">&gt;</span><span style="color:#000000">2.3.3</span><span style="color:#008080">&lt;/</span><span style="color:#3f7f7f">version</span><span style="color:#008080">&gt;</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">    </span><span style="color:#008080">&lt;/</span><span style="color:#3f7f7f">dependency</span><span style="color:#008080">&gt;</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">  </span><span style="color:#008080">&lt;/</span><span style="color:#3f7f7f">dependencies</span><span style="color:#008080">&gt;</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#008080">&lt;/</span><span style="color:#3f7f7f">project</span><span style="color:#008080">&gt;</span></span></span>
+</code></pre></div>
+
+<ul>
+  <li>líneas 12-16: la dependencia que incluye la biblioteca «Jackson»;
+  </li>
+</ul>
+
+<p>La clase [Person] es la siguiente:</p>
+<div class="odt-code-rich" data-linenums="true" style="counter-reset: odtline 0;"><pre><code class="language-java">
+<span class="odt-code-line"><span class="odt-code-line-content"><span style="font-weight:bold;color:#7f0055">package</span><span style="color:#000000"> istia.st.json;</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"> </span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"><span style="font-weight:bold;color:#7f0055">public</span><span style="color:#000000"> </span><span style="font-weight:bold;color:#7f0055">class</span><span style="color:#000000"> Personne {</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">    <span style="color:#000000">// data</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">    </span><span style="font-weight:bold;color:#7f0055">private</span><span style="color:#000000"> String nom;</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">    </span><span style="font-weight:bold;color:#7f0055">private</span><span style="color:#000000"> String prenom;</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">    </span><span style="font-weight:bold;color:#7f0055">private</span><span style="color:#000000"> </span><span style="font-weight:bold;color:#7f0055">int</span><span style="color:#000000"> age;</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"> </span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">    <span style="color:#000000">// manufacturers</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">    </span><span style="font-weight:bold;color:#7f0055">public</span><span style="color:#000000"> Personne() {</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"> </span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">    }</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"> </span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">    </span><span style="font-weight:bold;color:#7f0055">public</span><span style="color:#000000"> Personne(String nom, String prénom, </span><span style="font-weight:bold;color:#7f0055">int</span><span style="color:#000000"> âge) {</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">        </span><span style="font-weight:bold;color:#7f0055">this</span><span style="color:#000000">.nom = nom;</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">        </span><span style="font-weight:bold;color:#7f0055">this</span><span style="color:#000000">.prenom = prénom;</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">        </span><span style="font-weight:bold;color:#7f0055">this</span><span style="color:#000000">.age = âge;</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">    }</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"> </span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">    <span style="color:#000000">// signature</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">    </span><span style="font-weight:bold;color:#7f0055">public</span><span style="color:#000000"> String toString() {</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">        </span><span style="font-weight:bold;color:#7f0055">return</span><span style="color:#000000"> String.format(</span><span style="color:#2a00ff">&quot;Personne[%s, %s, %d]&quot;</span><span style="color:#000000">, nom, prenom, age);</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">    }</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"> </span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">    <span style="color:#000000">// getters and setters</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">...</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">}</span></span>
+</code></pre></div>
+
+<p>La clase [Main] es la siguiente:</p>
+<div class="odt-code-rich" data-linenums="true" style="counter-reset: odtline 0;"><pre><code class="language-java">
+<span class="odt-code-line"><span class="odt-code-line-content"><span style="font-weight:bold;color:#7f0055">package</span><span style="color:#000000"> istia.st.json;</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"> </span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"><span style="font-weight:bold;color:#7f0055">import</span><span style="color:#000000"> com.fasterxml.jackson.databind.ObjectMapper;</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"> </span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"><span style="font-weight:bold;color:#7f0055">import</span><span style="color:#000000"> java.io.IOException;</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"><span style="font-weight:bold;color:#7f0055">import</span><span style="color:#000000"> java.util.HashMap;</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"><span style="font-weight:bold;color:#7f0055">import</span><span style="color:#000000"> java.util.Map;</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"> </span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"><span style="font-weight:bold;color:#7f0055">public</span><span style="color:#000000"> </span><span style="font-weight:bold;color:#7f0055">class</span><span style="color:#000000"> Main {</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">  <span style="color:#000000">// the serialization / deserialization tool</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">  </span><span style="font-weight:bold;color:#7f0055">static</span><span style="color:#000000"> ObjectMapper mapper = </span><span style="font-weight:bold;color:#7f0055">new</span><span style="color:#000000"> ObjectMapper();</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"> </span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">  </span><span style="font-weight:bold;color:#7f0055">public</span><span style="color:#000000"> </span><span style="font-weight:bold;color:#7f0055">static</span><span style="color:#000000"> </span><span style="font-weight:bold;color:#7f0055">void</span><span style="color:#000000"> main(String[] args) </span><span style="font-weight:bold;color:#7f0055">throws</span><span style="color:#000000"> IOException {</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">    <span style="color:#000000">// creation of a person</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">    Personne paul = </span><span style="font-weight:bold;color:#7f0055">new</span><span style="color:#000000"> Personne(</span><span style="color:#2a00ff">&quot;Denis&quot;</span><span style="color:#000000">, </span><span style="color:#2a00ff">&quot;Paul&quot;</span><span style="color:#000000">, 40);</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">    <span style="color:#000000">// json display</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">    String json = mapper.writeValueAsString(paul);</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">    System.out.println(</span><span style="color:#2a00ff">&quot;Json=&quot;</span><span style="color:#000000"> + json);</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">    <span style="color:#000000">// person instantiation from Json</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">    Personne p = mapper.readValue(json, Personne.</span><span style="font-weight:bold;color:#7f0055">class</span><span style="color:#000000">);</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">    <span style="color:#000000">// person display</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">    System.out.println(</span><span style="color:#2a00ff">&quot;Personne=&quot;</span><span style="color:#000000"> + p);</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">    <span style="color:#000000">// a picture</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">    Personne virginie = </span><span style="font-weight:bold;color:#7f0055">new</span><span style="color:#000000"> Personne(</span><span style="color:#2a00ff">&quot;Radot&quot;</span><span style="color:#000000">, </span><span style="color:#2a00ff">&quot;Virginie&quot;</span><span style="color:#000000">, 20);</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">    Personne[] personnes = </span><span style="font-weight:bold;color:#7f0055">new</span><span style="color:#000000"> Personne[]{paul, virginie};</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">    <span style="color:#000000">// json display</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">    json = mapper.writeValueAsString(personnes);</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">    System.out.println(</span><span style="color:#2a00ff">&quot;Json personnes=&quot;</span><span style="color:#000000"> + json);</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">    <span style="color:#000000">// dictionary</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">    Map&lt;String, Personne&gt; hpersonnes = </span><span style="font-weight:bold;color:#7f0055">new</span><span style="color:#000000"> HashMap&lt;String, Personne&gt;();</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">    hpersonnes.put(</span><span style="color:#2a00ff">&quot;1&quot;</span><span style="color:#000000">, paul);</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">    hpersonnes.put(</span><span style="color:#2a00ff">&quot;2&quot;</span><span style="color:#000000">, virginie);</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">    <span style="color:#000000">// json display</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">    json = mapper.writeValueAsString(hpersonnes);</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">    System.out.println(</span><span style="color:#2a00ff">&quot;Json hpersonnes=&quot;</span><span style="color:#000000"> + json);</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">  }</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">}</span></span>
+</code></pre></div>
+
+<p>Al ejecutar esta clase se obtiene el siguiente resultado en pantalla:</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-5-1">1</a></span>
+<span class="normal"><a href="#__codelineno-5-2">2</a></span>
+<span class="normal"><a href="#__codelineno-5-3">3</a></span>
+<span class="normal"><a href="#__codelineno-5-4">4</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-5-1" name="__codelineno-5-1"></a>Json={&quot;nom&quot;:&quot;Denis&quot;,&quot;prenom&quot;:&quot;Paul&quot;,&quot;age&quot;:40}
+<a id="__codelineno-5-2" name="__codelineno-5-2"></a>Personne=Personne[Denis, Paul, 40]
+<a id="__codelineno-5-3" name="__codelineno-5-3"></a>Json personnes=[{&quot;nom&quot;:&quot;Denis&quot;,&quot;prenom&quot;:&quot;Paul&quot;,&quot;age&quot;:40},{&quot;nom&quot;:&quot;Radot&quot;,&quot;prenom&quot;:&quot;Virginie&quot;,&quot;age&quot;:20}]
+<a id="__codelineno-5-4" name="__codelineno-5-4"></a>Json hpersonnes={&quot;2&quot;:{&quot;nom&quot;:&quot;Radot&quot;,&quot;prenom&quot;:&quot;Virginie&quot;,&quot;age&quot;:20},&quot;1&quot;:{&quot;nom&quot;:&quot;Denis&quot;,&quot;prenom&quot;:&quot;Paul&quot;,&quot;age&quot;:40}}
+</code></pre></div></td></tr></table></div>
+<p>Puntos clave del ejemplo:</p>
+<ul>
+  <li>el objeto [ObjectMapper] necesario para las transformaciones JSON/Object: línea 11;
+  </li>
+  <li>la transformación [Person] --&gt; JSON: línea 17;
+  </li>
+  <li>la transformación de JSON a [Person]: línea 20;
+  </li>
+  <li>la [IOException] lanzada por ambos métodos: línea 13.
+  </li>
+</ul>
+
+<p><a id="refheading1315181394789306"></a>
+<a id="wampserver"></a></p>
+<h2 id="615-instalacion-de-wampserver">6.15. <span style="color: #4f81bd">Instalación de [ WampServer]</span></h2>
+<p>[WampServer] es un paquete de software para desarrollar en PHP / MySQL / Apache en un equipo con Windows. Lo utilizaremos exclusivamente para el SGBD MySQL.</p>
+<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/10000000000001B800000143AA2F6C9E.png" width="264" height="194" style="display:inline-block; margin:4px;width:6.99cm;height:5.131cm;" class="odt-zoomable" data-zoom-src="images/10000000000001B800000143AA2F6C9E.png" /></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/10000000000001DE0000012785F93F1B.png" width="334" height="206" style="display:inline-block; margin:4px;width:8.849cm;height:5.461cm;" class="odt-zoomable" data-zoom-src="images/10000000000001DE0000012785F93F1B.png" /></td></tr></table>
+
+<ul>
+  <li>En la página web de [WampServer] [1], elija la versión adecuada [2],
+  </li>
+  <li>El ejecutable descargado es un instalador. Se le solicitarán varios datos durante la instalación. Estos no tienen que ver con MySQL, por lo que puede ignorarlos. Al final de la instalación aparecerá la ventana [3]. Inicie [WampServer],
+  </li>
+</ul>
+
+<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/10000000000000A100000087786C9D26.png" width="113" height="94" style="display:inline-block; margin:4px;width:2.979cm;height:2.498cm;" class="odt-zoomable" data-zoom-src="images/10000000000000A100000087786C9D26.png" /></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/10000000000000D700000130F483B199.png" width="150" height="213" style="display:inline-block; margin:4px;width:3.979cm;height:5.627cm;" class="odt-zoomable" data-zoom-src="images/10000000000000D700000130F483B199.png" /></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;">&nbsp;</td></tr></table>
+
+<ul>
+  <li>En [4], el icono [WampServer] aparece en la barra de tareas, en la parte inferior derecha de la pantalla [4];
+  </li>
+  <li>al hacer clic en él, aparece el menú [5]. Este te permite gestionar el servidor Apache y el SGBD MySQL. Para gestionar este último, utiliza la opción [PhpMyAdmin],
+  </li>
+  <li>que abre la ventana que se muestra a continuación,
+  </li>
+</ul>
+
+<p><img src="images/10000000000003C600000186DE03B7E4.png" width="580" height="234" style="width:15.341cm;height:6.195cm;" alt="Image" class="odt-zoomable" data-zoom-src="images/10000000000003C600000186DE03B7E4.png" /></p>
+<p>No daremos muchos detalles sobre el uso de [PhpMyAdmin]. En el documento mostramos cómo utilizarlo.</p>
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner">
+
+      <div>
+        <a href="https://stahe.github.io" target="_blank">
+          https://stahe.github.io
+        </a>
+        <br>
+        Este curso-tutorial escrito por <strong>Serge Tahé</strong> se pone a disposición del público según los términos de la
+        <em>Licencia Creative Commons Reconocimiento – Sin uso comercial –
+        Compartir en las mismas condiciones 3.0 no adaptada</em>.
+
+      </div>
+
+    </div>
+  </div>
+
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": ".", "features": ["navigation.sections", "navigation.indexes", "navigation.expand", "toc.integrate", "navigation.top"], "search": "assets/javascripts/workers/search.7a47a382.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="assets/javascripts/bundle.e71a0d61.min.js"></script>
+      
+        <script src="javascripts/focus.js"></script>
+      
+    
+  </body>
+</html>
